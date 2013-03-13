@@ -22,15 +22,9 @@ public class ManagerEntitiesImplTest {
     }
 
     @Test
-     public void testAddEntityDisk() {
+     public void testAddEntity() {
 
-        Disk disk = new Disk();
-        try{
-         manager.addEntity(disk);
-         fail("Entity disk without arguments was added to manager");
-        }catch (IllegalArgumentException ex){}
-
-        disk = new Disk("","Pedro");
+        Disk disk = new Disk("","Pedro");
         try{
             manager.addEntity(disk);
             fail("Entity disk with empty  first argument was added to manager");
@@ -47,11 +41,6 @@ public class ManagerEntitiesImplTest {
         Entity result = manager.findEntity(disk.getId());
         assertNotNull(result);
 
-
-    }
-
-    @Test
-    public void testAddEntityBook() throws Exception {
     }
 
     @Test
@@ -76,7 +65,7 @@ public class ManagerEntitiesImplTest {
         tmpList = manager.getEntitiesList();
         assertTrue("Entity list isn't empty. Method removeEntity does not work correctly.", tmpList.isEmpty());
 
-        Book tmpBook = new Book();
+        Book tmpBook = new Book("The Godfather", "Mario Puzo");
         manager.addEntity(tmpBook);
         tmpList = manager.getEntitiesList();
 

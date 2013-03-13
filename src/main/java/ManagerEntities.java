@@ -10,19 +10,21 @@ import java.util.List;
  */
 public interface ManagerEntities {
 
-    void addEntity(Disk disk);
-
-    void addEntity(Book book);
+    void addEntity(Entity entity);
 
     void removeEntity(Entity entity);
 
-    void editEntity(Entity entity, int args);
+    void editEntity(Entity oldEntity, Entity newEntity);
 
-    Entity findEntity(int args);
+    Entity findEntity(int id);
+
+    Entity findEntity(String name, String author);
 
     List<Entity> getEntitiesList();
 
     List<Entity> getEntitiesList(Date releaseYear);
 
     List<Entity> getEntitiesList(GenreEnum genre);
+
+    List<Entity> getEntitiesList(String author);
 }

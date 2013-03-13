@@ -6,19 +6,12 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 
 	/**
 	 * 
-	 * @param disk
+	 * @param entity
 	 */
-	public void addEntity(Disk disk) {
+	public void addEntity(Entity entity) {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param book
-	 */
-	public void addEntity(Book book) {
-		throw new UnsupportedOperationException();
-	}
 
 	/**
 	 * 
@@ -30,20 +23,29 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 
 	/**
 	 * 
-	 * @param entity
-	 * @param args
+	 * @param oldEntity
+	 * @param newEntity
 	 */
-	public void editEntity(Entity entity, int args) {
+	public void editEntity(Entity oldEntity, Entity newEntity) {
 		throw new UnsupportedOperationException();
 	}
 
 	/**
 	 * 
-	 * @param args
+	 * @param id
 	 */
-	public Entity findEntity(int args) {
+	public Entity findEntity(int id) {
 		throw new UnsupportedOperationException();
 	}
+
+    /**
+     *
+     * @param name
+     * @param author
+     */
+    public Entity findEntity(String name, String author) {
+        throw new UnsupportedOperationException();
+    }
 
 	public List<Entity> getEntitiesList() {
         throw new UnsupportedOperationException();
@@ -64,4 +66,12 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 	public List<Entity> getEntitiesList(GenreEnum genre) {
         throw new UnsupportedOperationException();
 	}
+
+    /**
+     *
+     * @param author
+     */
+    public List<Entity> getEntitiesList(String author) {
+        throw new UnsupportedOperationException();
+    }
 }
