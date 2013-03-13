@@ -4,10 +4,14 @@ public class Disk extends Entity {
 	private KindEnum kind;
 	private TypeEnum type;
 
-	public KindEnum getKind() {
-		return this.kind;
-	}
 
+    public Disk(){
+
+    }
+
+    public Disk(String name,String autor) {
+
+    }
 	/**
 	 * 
 	 * @param kind

@@ -2,6 +2,7 @@ import java.util.Date;
 
 public abstract class Entity {
 
+    private int id;
 	private String name;
 	private Date releaseYear;
 	private String author;
@@ -17,4 +18,8 @@ public abstract class Entity {
 		throw new UnsupportedOperationException();
 	}
 
+
+    public int getId() {
+        return id;
+    }
 }
