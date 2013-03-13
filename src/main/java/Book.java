@@ -1,5 +1,5 @@
 
-public class Book extends Entita {
+public class Book extends Entity {
 
 	private int pageCount;
 

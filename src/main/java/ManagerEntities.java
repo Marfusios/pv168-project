@@ -10,22 +10,19 @@ import java.util.List;
  */
 public interface ManagerEntities {
 
+    void addEntity(Disk disk);
 
-    public ManagerEntitiesImpl();
+    void addEntity(Book book);
 
-    public void addEntita(Disk disk);
+    void removeEntity(Entity entity);
 
-    public void addEntita(Book book);
+    void editEntity(Entity entity, int args);
 
-    public void removeEntita(Entita entita);
+    Entity findEntity(int args);
 
-    public void editEntita(Entita entita, int args);
+    List<Entity> getEntitiesList();
 
-    private Entita findEntita(int args);
+    List<Entity> getEntitiesList(Date releaseYear);
 
-    public List<Entita> getEntitiesList();
-
-    public List<Entita> getEntitiesList(Date releaseYear);
-
-    public List<Entita> getEntitiesList(GenreEnum genre);
+    List<Entity> getEntitiesList(GenreEnum genre);
 }

@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public abstract class Entita {
+public abstract class Entity {
 
 	private String name;
 	private Date releaseYear;
@@ -8,7 +8,8 @@ public abstract class Entita {
 	private String position;
 	private GenreEnum genre;
 
-	public void get() {
+
+    public void get() {
 		throw new UnsupportedOperationException();
 	}
 

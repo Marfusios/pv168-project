@@ -1,13 +1,8 @@
 import java.util.Date;
 import java.util.List;
 
-public class ManagerEntitiesImpl {
 
-
-
-    public ManagerEntitiesImpl() implements ManagerEntities{
-        throw new UnsupportedOperationException();
-    }
+public class ManagerEntitiesImpl implements ManagerEntities {
 
 	/**
 	 * 
@@ -27,18 +22,18 @@ public class ManagerEntitiesImpl {
 
 	/**
 	 * 
-	 * @param entita
+	 * @param entity
 	 */
-	public void removeEntity(Entita entita) {
+	public void removeEntity(Entity entity) {
 		throw new UnsupportedOperationException();
 	}
 
 	/**
 	 * 
-	 * @param entita
+	 * @param entity
 	 * @param args
 	 */
-	public void editEntity(Entita entita, int args) {
+	public void editEntity(Entity entity, int args) {
 		throw new UnsupportedOperationException();
 	}
 
@@ -46,11 +41,11 @@ public class ManagerEntitiesImpl {
 	 * 
 	 * @param args
 	 */
-	private Entita findEntity(int args) {
+	public Entity findEntity(int args) {
 		throw new UnsupportedOperationException();
 	}
 
-	public List<Entita> getEntitiesList() {
+	public List<Entity> getEntitiesList() {
         throw new UnsupportedOperationException();
 	}
 
@@ -58,7 +53,7 @@ public class ManagerEntitiesImpl {
 	 * 
 	 * @param releaseYear
 	 */
-	public List<Entita> getEntitiesList(Date releaseYear) {
+	public List<Entity> getEntitiesList(Date releaseYear) {
         throw new UnsupportedOperationException();
 	}
 
@@ -66,8 +61,7 @@ public class ManagerEntitiesImpl {
 	 * 
 	 * @param genre
 	 */
-	public List<Entita> getEntitiesList(GenreEnum genre) {
+	public List<Entity> getEntitiesList(GenreEnum genre) {
         throw new UnsupportedOperationException();
 	}
-
 }
