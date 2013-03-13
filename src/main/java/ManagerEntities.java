@@ -1,69 +1,31 @@
 import java.util.Date;
 import java.util.List;
 
-public class ManagerEntities {
+/**
+ * Created with IntelliJ IDEA.
+ * User: Romhulus
+ * Date: 13.3.13
+ * Time: 16:08
+ * To change this template use File | Settings | File Templates.
+ */
+public interface ManagerEntities {
 
-	private List<Entity> entitiesList;
 
-	/**
-	 * 
-	 * @param disk
-	 */
-	public void addEntity(Disk disk) {
-		throw new UnsupportedOperationException();
-	}
+    public ManagerEntitiesImpl();
 
-	/**
-	 * 
-	 * @param book
-	 */
-	public void addEntity(Book book) {
-		throw new UnsupportedOperationException();
-	}
+    public void addEntita(Disk disk);
 
-	/**
-	 * 
-	 * @param entity
-	 */
-	public void removeEntity(Entity entity) {
-		throw new UnsupportedOperationException();
-	}
+    public void addEntita(Book book);
 
-	/**
-	 * 
-	 * @param entity
-	 * @param args
-	 */
-	public void editEntity(Entity entity, int args) {
-		throw new UnsupportedOperationException();
-	}
+    public void removeEntita(Entita entita);
 
-	/**
-	 * 
-	 * @param args
-	 */
-	private Entity findEntity(int args) {
-		throw new UnsupportedOperationException();
-	}
+    public void editEntita(Entita entita, int args);
 
-	public List<Entity> getEntitiesList() {
-		return this.entitiesList;
-	}
+    private Entita findEntita(int args);
 
-	/**
-	 * 
-	 * @param releaseYear
-	 */
-	public List<Entity> getEntitiesList(Date releaseYear) {
-		return this.entitiesList;
-	}
+    public List<Entita> getEntitiesList();
 
-	/**
-	 * 
-	 * @param genre
-	 */
-	public List<Entity> getEntitiesList(GenreEnum genre) {
-		return this.entitiesList;
-	}
+    public List<Entita> getEntitiesList(Date releaseYear);
 
+    public List<Entita> getEntitiesList(GenreEnum genre);
 }

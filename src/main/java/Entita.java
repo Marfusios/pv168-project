@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public abstract class Entity {
+public abstract class Entita {
 
 	private String name;
 	private Date releaseYear;

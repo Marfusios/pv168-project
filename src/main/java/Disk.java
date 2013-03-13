@@ -1,5 +1,5 @@
 
-public class Disk extends Entity {
+public class Disk extends Entita {
 
 	private KindEnum kind;
 	private TypeEnum type;
