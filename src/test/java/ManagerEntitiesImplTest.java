@@ -22,22 +22,7 @@ public class ManagerEntitiesImplTest {
     }
 
     @Test
-    public void testAddEntity() throws Exception {
-
-    }
-
-    @Test
     public void testRemoveEntity() throws Exception {
-
-    }
-
-    @Test
-    public void testGetEntitiesList() throws Exception {
-
-    }
-
-    @Test
-    public void testGetEntitiesList() throws Exception {
 
     }
 
