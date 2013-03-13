@@ -7,7 +7,7 @@
     </list>
     <ignored path="pv168-project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363202192236" ignored="false" />
+    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363202651212" ignored="false" />
     <file path="/Main.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363041314656" ignored="false" />
     <file path="/ManagerEntities.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201152441" ignored="false" />
     <file path="/Entita.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201079247" ignored="false" />
@@ -15,7 +15,7 @@
     <file path="/Disk.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201256643" ignored="false" />
     <file path="/Book.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201261302" ignored="false" />
     <file path="/fragment.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201741122" ignored="false" />
-    <file path="/ManagerEntitiesImplTest.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201840784" ignored="false" />
+    <file path="/ManagerEntitiesImplTest.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363204553207" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,7 @@
       <file leaf-file-name="ManagerEntitiesImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="59" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0">
+            <state line="54" column="35" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -104,7 +104,7 @@
       <file leaf-file-name="ManagerEntitiesImplTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="23" selection-start="315" selection-end="315" vertical-scroll-proportion="0.38260868">
+            <state line="55" column="25" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.7634783">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -509,7 +509,11 @@
       <created>1363202108389</created>
       <updated>1363202108389</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added generated tests.">
+      <created>1363202655660</created>
+      <updated>1363202655660</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -704,14 +708,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="59" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0">
+        <state line="54" column="35" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="315" selection-end="315" vertical-scroll-proportion="0.38260868">
+        <state line="55" column="25" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.7634783">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

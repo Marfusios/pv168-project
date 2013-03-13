@@ -1,6 +1,10 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
+import static org.junit.Assert.*;
+
 /**
  * Created with IntelliJ IDEA.
  * User: m4r10
@@ -10,14 +14,20 @@ import org.junit.Test;
  */
 public class ManagerEntitiesImplTest {
 
+    ManagerEntitiesImpl manager;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
+        manager = new ManagerEntitiesImpl();
+    }
+
+    @Test
+     public void testAddEntityDisk() throws Exception {
 
     }
 
     @Test
-    public void testAddEntity() throws Exception {
+    public void testAddEntityBook() throws Exception {
 
     }
 
@@ -27,7 +37,29 @@ public class ManagerEntitiesImplTest {
     }
 
     @Test
-    public void testGetEntitiesList() throws Exception {
+    public void testGetEntitiesList() {
+
+        List<Entity> tmpList = manager.getEntitiesList();
+
+        assertNotNull(tmpList);
+        if(!tmpList.isEmpty())
+        {
+            for(Entity one : tmpList)
+            {
+                manager.removeEntity(one);
+            }
+        }
+
+        tmpList = manager.getEntitiesList();
+        assertTrue("Entity list isn't empty. Method removeEntity does not work correctly.", tmpList.isEmpty());
+
+        Book tmpBook = new Book();
+        manager.addEntity(tmpBook);
+        tmpList = manager.getEntitiesList();
+
+        assertFalse("Entity list is empty. Method addEntity does not work correctly.", tmpList.isEmpty());
+        assertTrue("In the list is more than one element.",tmpList.size() == 1);
+        assertEquals("The book from list is not equal tmpBook",tmpBook, tmpList.get(0));
 
     }
 }
