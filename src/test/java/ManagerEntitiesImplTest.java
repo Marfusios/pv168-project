@@ -22,9 +22,15 @@ public class ManagerEntitiesImplTest {
     }
 
     @Test
-     public void testAddEntity() {
+     public void testAddEntityDisk() {
 
-        Disk disk = new Disk("","Pedro");
+        Disk disk = new Disk();
+        try{
+         manager.addEntity(disk);
+         fail("Entity disk without arguments was added to manager");
+        }catch (IllegalArgumentException ex){}
+
+        disk = new Disk("","Pedro");
         try{
             manager.addEntity(disk);
             fail("Entity disk with empty  first argument was added to manager");
@@ -36,10 +42,36 @@ public class ManagerEntitiesImplTest {
             fail("Entity disk with empty second argument was added to manager");
         }catch (IllegalArgumentException ex){}
 
+
         disk = new Disk("top 10","Pedro");
         manager.addEntity(disk);
+        assertNotNull("Added entity don´t create ID",disk.getId());
         Entity result = manager.findEntity(disk.getId());
-        assertNotNull(result);
+        assertNotNull("Added entitys not found",result);
+
+
+    }
+    @Test
+    public void testFindEntityWithID(){
+        Disk disk = new Disk();
+        disk.setName("the best");
+        disk.setAuthor("Lolita");
+        manager.addEntity(disk);
+        int id=disk.getId();
+        assertEquals("Finded entity is not same with added entity",disk,manager.findEntity(id));
+        manager.removeEntity(disk);
+        assertNull("found an entity after remove it",manager.findEntity(id));
+
+    }
+    @Test
+    public void testFindEntityWithNameAndAuthor(){
+        Disk disk = new Disk();
+        disk.setName("the best");
+        disk.setAuthor("Lolita");
+        manager.addEntity(disk);
+        assertEquals("Finded entity is not same with added entity",disk,manager.findEntity("the best","Lolita"));
+        assertNotSame("Finded entity with wrong name is same with added entity",disk,manager.findEntity("best the","Lolita"));
+        assertNotSame("Finded entity with wrong author is same with added entity",disk,manager.findEntity("the best","Orange"));
 
     }
 
@@ -65,7 +97,7 @@ public class ManagerEntitiesImplTest {
         tmpList = manager.getEntitiesList();
         assertTrue("Entity list isn't empty. Method removeEntity does not work correctly.", tmpList.isEmpty());
 
-        Book tmpBook = new Book("The Godfather", "Mario Puzo");
+        Book tmpBook = new Book();
         manager.addEntity(tmpBook);
         tmpList = manager.getEntitiesList();
 

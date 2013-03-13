@@ -10,7 +10,11 @@ public class Book extends Entity {
 
     public Book(String name, Date releaseYear, String author, String position, GenreEnum genre, int pageCount) {
         super(name, releaseYear, author, position, genre);
-        this.pageCount = pageCount;
+        setPageCount(pageCount);
+    }
+
+    public Book() {
+        super();
     }
 
     public int getPageCount() {

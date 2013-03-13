@@ -15,6 +15,10 @@ public class Disk extends Entity {
         this.type = type;
     }
 
+    public Disk() {
+        super();    //To change body of overridden methods use File | Settings | File Templates.
+    }
+
     /**
 	 * 
 	 * @param kind
