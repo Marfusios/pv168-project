@@ -13,9 +13,6 @@ public class Book extends Entity {
         setPageCount(pageCount);
     }
 
-    public Book() {
-        super();
-    }
 
     public int getPageCount() {
 		return this.pageCount;

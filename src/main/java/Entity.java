@@ -18,9 +18,6 @@ public abstract class Entity {
         //To change body of created methods use File | Settings | File Templates.
     }
 
-    public Entity() {
-        //To change body of created methods use File | Settings | File Templates.
-    }
 
 
     public void get() {

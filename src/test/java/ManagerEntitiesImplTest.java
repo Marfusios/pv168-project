@@ -24,10 +24,10 @@ public class ManagerEntitiesImplTest {
     @Test
      public void testAddEntityDisk() {
 
-        Disk disk = new Disk();
+        Disk disk = new Disk("","");
         try{
          manager.addEntity(disk);
-         fail("Entity disk without arguments was added to manager");
+         fail("Entity disk with empty arguments was added to manager");
         }catch (IllegalArgumentException ex){}
 
         disk = new Disk("","Pedro");
@@ -53,9 +53,7 @@ public class ManagerEntitiesImplTest {
     }
     @Test
     public void testFindEntityWithID(){
-        Disk disk = new Disk();
-        disk.setName("the best");
-        disk.setAuthor("Lolita");
+        Disk disk = new Disk("the best","Lolita");
         manager.addEntity(disk);
         int id=disk.getId();
         assertEquals("Finded entity is not same with added entity",disk,manager.findEntity(id));
@@ -65,9 +63,7 @@ public class ManagerEntitiesImplTest {
     }
     @Test
     public void testFindEntityWithNameAndAuthor(){
-        Disk disk = new Disk();
-        disk.setName("the best");
-        disk.setAuthor("Lolita");
+        Disk disk = new Disk("the best","Lolita");
         manager.addEntity(disk);
         assertEquals("Finded entity is not same with added entity",disk,manager.findEntity("the best","Lolita"));
         assertNotSame("Finded entity with wrong name is same with added entity",disk,manager.findEntity("best the","Lolita"));
@@ -97,7 +93,7 @@ public class ManagerEntitiesImplTest {
         tmpList = manager.getEntitiesList();
         assertTrue("Entity list isn't empty. Method removeEntity does not work correctly.", tmpList.isEmpty());
 
-        Book tmpBook = new Book();
+        Book tmpBook = new Book("Zarivka","Lampa");
         manager.addEntity(tmpBook);
         tmpList = manager.getEntitiesList();
 
