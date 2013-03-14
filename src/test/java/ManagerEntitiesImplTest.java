@@ -85,6 +85,11 @@ public class ManagerEntitiesImplTest {
     @Test
     public void testRemoveEntity() throws Exception
     {
+        try{
+            manager.removeEntity(null);
+            fail("Manager remove null object");
+        }catch(NullPointerException ex){}
+
         Book tmpBook = new Book("Visual C#", "John Sharp");
         manager.addEntity(tmpBook);
 
@@ -144,6 +149,5 @@ public class ManagerEntitiesImplTest {
 
         assertEquals("Entity was modified badly", finded.getPosition(), "Position");
 
-        //comment
     }
 }
