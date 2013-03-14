@@ -75,9 +75,21 @@ public class ManagerEntitiesImplTest {
 
     }
 
+
     @Test
     public void testRemoveEntity() throws Exception {
+        Book tmpBook = new Book("Visual C#", "John Sharp");
+        manager.addEntity(tmpBook);
 
+        Entity finded = manager.findEntity("Visual C#", "John Sharp");
+
+        assertNotNull("Finded book is null",finded);
+        assertEquals("Finded book is not equal tmpBook", tmpBook, finded);
+
+        manager.removeEntity(finded);
+        finded = manager.findEntity("Visual C#", "John Sharp");
+
+        assertNull("Finded book should be null after remove", finded);
     }
 
     @Test
