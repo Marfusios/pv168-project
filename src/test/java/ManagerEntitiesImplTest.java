@@ -47,7 +47,7 @@ public class ManagerEntitiesImplTest {
         manager.addEntity(disk);
         assertNotNull("Added entity don´t create ID",disk.getId());
         Entity result = manager.findEntity(disk.getId());
-        assertNotNull("Added entitys not found",result);
+        assertNotNull("Added entities not found",result);
 
 
     }
@@ -72,8 +72,12 @@ public class ManagerEntitiesImplTest {
     }
 
 
+
+
+
     @Test
-    public void testRemoveEntity() throws Exception {
+    public void testRemoveEntity() throws Exception
+    {
         Book tmpBook = new Book("Visual C#", "John Sharp");
         manager.addEntity(tmpBook);
 
@@ -89,7 +93,8 @@ public class ManagerEntitiesImplTest {
     }
 
     @Test
-    public void testGetEntitiesList() {
+    public void testGetEntitiesList()
+    {
 
         List<Entity> tmpList = manager.getEntitiesList();
 
@@ -105,7 +110,7 @@ public class ManagerEntitiesImplTest {
         tmpList = manager.getEntitiesList();
         assertTrue("Entity list isn't empty. Method removeEntity does not work correctly.", tmpList.isEmpty());
 
-        Book tmpBook = new Book("Visual C#","John Sharp");
+        Book tmpBook = new Book("The godfather","Mario Puzo");
         manager.addEntity(tmpBook);
         tmpList = manager.getEntitiesList();
 
@@ -113,5 +118,18 @@ public class ManagerEntitiesImplTest {
         assertTrue("In the list is more than one element.",tmpList.size() == 1);
         assertEquals("The book from list is not equal tmpBook",tmpBook, tmpList.get(0));
 
+    }
+
+    @Test
+    public void testEditEntity()
+    {
+        manager.addEntity(new Book("Visual C#", "John Sharp"));
+
+        Entity oldEntity = manager.findEntity("Visual C#", "John Sharp");
+        assertNotNull("Finded entity is null", oldEntity);
+
+        manager.editEntity(oldEntity, new Book("C#", oldEntity.getAuthor()));
+
+        assertNotNull("Modified entity is not in the DB", manager.findEntity("C#", oldEntity.getAuthor()));
     }
 }

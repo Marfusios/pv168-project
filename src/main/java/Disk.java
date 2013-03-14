@@ -9,8 +9,8 @@ public class Disk extends Entity {
         super(name, author);
     }
 
-    public Disk(String name, Date releaseYear, String author, String position, GenreEnum genre, KindEnum kind, TypeEnum type) {
-        super(name, releaseYear, author, position, genre);
+    public Disk(int id, String name, Date releaseYear, String author, String position, GenreEnum genre, KindEnum kind, TypeEnum type) {
+        super(id, name, releaseYear, author, position, genre);
         this.kind = kind;
         this.type = type;
     }
