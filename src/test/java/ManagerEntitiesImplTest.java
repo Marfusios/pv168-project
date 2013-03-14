@@ -133,10 +133,12 @@ public class ManagerEntitiesImplTest {
         Entity finded = manager.findEntity("C#", oldEntity.getAuthor());
         assertNotNull("Modified entity is not in the DB", finded);
 
-        manager.editEntity(finded , new Book(finded.getName(), new Date(11), finded.getAuthor(), "Position", GenreEnum.COMEDY, 580));
+        manager.editEntity(finded , new Book(finded.getName(), new Date(12), finded.getAuthor(), "Position", GenreEnum.COMEDY, 580));
         finded = manager.findEntity("C#", oldEntity.getAuthor());
         assertNotNull("Modified entity is not in the DB", finded);
 
         assertEquals("Entity was modified badly", finded.getPosition(), "Position");
+
+        //comment
     }
 }

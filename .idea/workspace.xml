@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a574ad62-a16a-400f-a34f-dd3e2baa70b0" name="Default" comment="">
+    <list default="true" id="a574ad62-a16a-400f-a34f-dd3e2baa70b0" name="Default" comment="Testing update">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pv168-project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363259120574" ignored="false" />
+    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363259670532" ignored="false" />
     <file path="/Main.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363041314656" ignored="false" />
     <file path="/ManagerEntities.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201152441" ignored="false" />
     <file path="/Entita.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201079247" ignored="false" />
@@ -15,7 +15,7 @@
     <file path="/Disk.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363206887729" ignored="false" />
     <file path="/Book.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363215340769" ignored="false" />
     <file path="/fragment.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363259120574" ignored="false" />
-    <file path="/ManagerEntitiesImplTest.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363258886874" ignored="false" />
+    <file path="/ManagerEntitiesImplTest.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363259695871" ignored="false" />
     <file path="/Entity.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363214967324" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +118,7 @@
       <file leaf-file-name="ManagerEntitiesImplTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="74" selection-start="4295" selection-end="4295" vertical-scroll-proportion="0.77031803">
+            <state line="133" column="82" selection-start="4219" selection-end="4219" vertical-scroll-proportion="0.78798586">
               <folding />
             </state>
           </provider>
@@ -468,7 +468,11 @@
       <created>1363259018693</created>
       <updated>1363259018693</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Testing update">
+      <created>1363259594492</created>
+      <updated>1363259594492</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -539,7 +543,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added third test." />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing update" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -558,6 +562,7 @@
     <MESSAGE value="Added generated tests." />
     <MESSAGE value="Added third test. Fixed constructors and setters and getters." />
     <MESSAGE value="Added third test." />
+    <MESSAGE value="Testing update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -670,7 +675,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="74" selection-start="4295" selection-end="4295" vertical-scroll-proportion="0.77031803">
+        <state line="133" column="82" selection-start="4219" selection-end="4219" vertical-scroll-proportion="0.78798586">
           <folding />
         </state>
       </provider>
