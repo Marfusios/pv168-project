@@ -14,8 +14,7 @@ public abstract class Entity {
         this.author=author;
     }
 
-    protected Entity(int id, String name, Date releaseYear, String author, String position, GenreEnum genre) {
-        this.id = id;
+    protected Entity(String name, Date releaseYear, String author, String position, GenreEnum genre) {
         this.name = name;
         this.releaseYear = releaseYear;
         this.author = author;

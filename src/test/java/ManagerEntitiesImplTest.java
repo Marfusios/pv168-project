@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Date;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -129,7 +130,13 @@ public class ManagerEntitiesImplTest {
         assertNotNull("Finded entity is null", oldEntity);
 
         manager.editEntity(oldEntity, new Book("C#", oldEntity.getAuthor()));
+        Entity finded = manager.findEntity("C#", oldEntity.getAuthor());
+        assertNotNull("Modified entity is not in the DB", finded);
 
-        assertNotNull("Modified entity is not in the DB", manager.findEntity("C#", oldEntity.getAuthor()));
+        manager.editEntity(finded , new Book(finded.getName(), new Date(10), finded.getAuthor(), "Position", GenreEnum.COMEDY, 580));
+        finded = manager.findEntity("C#", oldEntity.getAuthor());
+        assertNotNull("Modified entity is not in the DB", finded);
+
+        assertEquals("Entity was modified badly", finded.getPosition(), "Position");
     }
 }
