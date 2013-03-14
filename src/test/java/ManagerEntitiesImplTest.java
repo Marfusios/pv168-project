@@ -134,6 +134,11 @@ public class ManagerEntitiesImplTest {
     @Test
     public void testEditEntity()
     {
+        try{
+            manager.editEntity(null, new Book("TestName", "TestAuthor"));
+            fail("Manager modify null object");
+        }catch(NullPointerException ex){}
+
         manager.addEntity(new Book("Visual C#", "John Sharp"));
 
         Entity oldEntity = manager.findEntity("Visual C#", "John Sharp");

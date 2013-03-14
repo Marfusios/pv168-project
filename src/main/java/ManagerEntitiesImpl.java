@@ -9,7 +9,7 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 	 * @param entity
 	 */
 	public void addEntity(Entity entity) {
-		throw new UnsupportedOperationException();
+		//throw new UnsupportedOperationException();
 	}
 
 
@@ -35,7 +35,10 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 	 * @param id
 	 */
 	public Entity findEntity(int id) {
-		throw new UnsupportedOperationException();
+		Book tmp = new Book("Name", "Test");
+        tmp.setId(0);
+
+        return tmp;
 	}
 
     /**
