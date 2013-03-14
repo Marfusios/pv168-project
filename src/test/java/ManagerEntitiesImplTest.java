@@ -25,6 +25,11 @@ public class ManagerEntitiesImplTest {
     @Test
      public void testAddEntityDisk() {
 
+         try{
+             manager.addEntity(null);
+             fail("Manager added null object");
+         }catch(NullPointerException ex){}
+
         Disk disk = new Disk("","");
         try{
          manager.addEntity(disk);
