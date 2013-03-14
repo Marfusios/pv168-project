@@ -76,6 +76,7 @@ public class ManagerEntitiesImplTest {
 
 
 
+
     @Test
     public void testRemoveEntity() throws Exception
     {
@@ -118,7 +119,6 @@ public class ManagerEntitiesImplTest {
         assertFalse("Entity list is empty. Method addEntity does not work correctly.", tmpList.isEmpty());
         assertTrue("In the list is more than one element.",tmpList.size() == 1);
         assertEquals("The book from list is not equal tmpBook",tmpBook, tmpList.get(0));
-
     }
 
     @Test
@@ -133,7 +133,7 @@ public class ManagerEntitiesImplTest {
         Entity finded = manager.findEntity("C#", oldEntity.getAuthor());
         assertNotNull("Modified entity is not in the DB", finded);
 
-        manager.editEntity(finded , new Book(finded.getName(), new Date(10), finded.getAuthor(), "Position", GenreEnum.COMEDY, 580));
+        manager.editEntity(finded , new Book(finded.getName(), new Date(11), finded.getAuthor(), "Position", GenreEnum.COMEDY, 580));
         finded = manager.findEntity("C#", oldEntity.getAuthor());
         assertNotNull("Modified entity is not in the DB", finded);
 
