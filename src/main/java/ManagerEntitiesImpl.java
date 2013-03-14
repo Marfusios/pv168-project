@@ -47,6 +47,7 @@ public class ManagerEntitiesImpl implements ManagerEntities {
         throw new UnsupportedOperationException();
     }
 
+
 	public List<Entity> getEntitiesList() {
         throw new UnsupportedOperationException();
 	}
