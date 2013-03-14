@@ -105,7 +105,7 @@ public class ManagerEntitiesImplTest {
         tmpList = manager.getEntitiesList();
         assertTrue("Entity list isn't empty. Method removeEntity does not work correctly.", tmpList.isEmpty());
 
-        Book tmpBook = new Book("Zarivka","Lampa");
+        Book tmpBook = new Book("Visual C#","John Sharp");
         manager.addEntity(tmpBook);
         tmpList = manager.getEntitiesList();
 
