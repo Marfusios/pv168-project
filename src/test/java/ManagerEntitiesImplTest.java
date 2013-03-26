@@ -62,7 +62,7 @@ public class ManagerEntitiesImplTest {
         Disk disk = new Disk("the best","Lolita");
         manager.addEntity(disk);
         int id=disk.getId();
-        assertEquals("Finded entity is not same with added entity",disk,manager.findEntity(id));
+        assertEquals("Found entity is not same with added entity",disk,manager.findEntity(id));
         manager.removeEntity(disk);
         assertNull("found an entity after remove it",manager.findEntity(id));
 
@@ -71,9 +71,9 @@ public class ManagerEntitiesImplTest {
     public void testFindEntityWithNameAndAuthor(){
         Disk disk = new Disk("the best","Lolita");
         manager.addEntity(disk);
-        assertEquals("Finded entity is not same with added entity",disk,manager.findEntity("the best","Lolita"));
-        assertNotSame("Finded entity with wrong name is same with added entity",disk,manager.findEntity("best the","Lolita"));
-        assertNotSame("Finded entity with wrong author is same with added entity",disk,manager.findEntity("the best","Orange"));
+        assertEquals("Found entity is not same with added entity",disk,manager.findEntity("the best","Lolita"));
+        assertNotSame("Found entity with wrong name is same with added entity",disk,manager.findEntity("best the","Lolita"));
+        assertNotSame("Found entity with wrong author is same with added entity",disk,manager.findEntity("the best","Orange"));
 
     }
 
@@ -93,15 +93,15 @@ public class ManagerEntitiesImplTest {
         Book tmpBook = new Book("Visual C#", "John Sharp");
         manager.addEntity(tmpBook);
 
-        Entity finded = manager.findEntity("Visual C#", "John Sharp");
+        Entity found = manager.findEntity("Visual C#", "John Sharp");
 
-        assertNotNull("Finded book is null",finded);
-        assertEquals("Finded book is not equal tmpBook", tmpBook, finded);
+        assertNotNull("Found book is null",found);
+        assertEquals("Found book is not equal tmpBook", tmpBook, found);
 
-        manager.removeEntity(finded);
-        finded = manager.findEntity("Visual C#", "John Sharp");
+        manager.removeEntity(found);
+        found = manager.findEntity("Visual C#", "John Sharp");
 
-        assertNull("Finded book should be null after remove", finded);
+        assertNull("Found book should be null after remove", found);
     }
 
     @Test
