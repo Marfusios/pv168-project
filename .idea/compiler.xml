@@ -25,6 +25,9 @@
         <module name="pv168-project" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="pv168-project" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

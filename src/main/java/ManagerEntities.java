@@ -20,7 +20,7 @@ public interface ManagerEntities {
 
     Entity findEntity(String name, String author);
 
-    List<Entity> getEntitiesList();
+    List<Entity> getEntitiesList() throws EntityException;
 
     List<Entity> getEntitiesList(Date releaseYear);
 

@@ -19,7 +19,7 @@ public class ManagerEntitiesImplTest {
 
     @Before
     public void setUp() {
-        manager = new ManagerEntitiesImpl();
+        manager = new ManagerEntitiesImpl(null);
     }
 
     @Test
