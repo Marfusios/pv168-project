@@ -12,6 +12,9 @@ public class Main {
 
     public static void main(String[] args) throws EntityException {
 
+        ManagerDB.startServer();
+        ManagerDB.createDatabase();
+
         ClientDataSource ds = new ClientDataSource();
         ds.setServerName("localhost");
         ds.setPortNumber(1527);
@@ -21,5 +24,8 @@ public class Main {
 
         ManagerEntities entitiesManager = new ManagerEntitiesImpl(ds);
 
+        //List<Entity> tmp = entitiesManager.getEntitiesList();
+
+        ManagerDB.closeServer();
     }
 }
