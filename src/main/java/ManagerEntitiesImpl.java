@@ -97,10 +97,39 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 	 * 
 	 * @param entity
 	 */
-	public void removeEntity(Entity entity) {
-		throw new UnsupportedOperationException();
-	}
+	public void removeEntity(Entity entity) throws EntityException {
+        Connection con = null;
+        PreparedStatement st = null;
+        try {
+            con = dataSource.getConnection();
+            //začátek SQL operace
+            if(entity instanceof Book)
+                st = con.prepareStatement("DELETE FROM entity JOIN books WHERE id =?");
+            if(entity instanceof Disk)
+                st=con.prepareStatement("DELETE FROM entity JOIN disks WHERE id=?");
+            st.setLong(2, entity.getId());
+            st.executeUpdate();
 
+        } catch (SQLException e) {
+            log.error("cannot remove entity", e);
+            throw new EntityException("database insert failed", e);
+        } finally {
+            if (st != null) {
+                try {
+                    st.close();
+                } catch (SQLException e) {
+                    log.error("cannot close statement", e);
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    log.error("cannot close connection", e);
+                }
+            }
+	     }
+    }
 	/**
 	 * 
 	 * @param oldEntity

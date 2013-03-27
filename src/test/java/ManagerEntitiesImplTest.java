@@ -59,15 +59,14 @@ public class ManagerEntitiesImplTest {
     }
     @Test
     public void testFindEntityWithID(){
-        Disk disk = new Disk("the best","Lolita");
         try{
+        Disk disk = new Disk("the best","Lolita");
         manager.addEntity(disk);
-        }catch(EntityException ex ) {}
         long id=disk.getId();
         assertEquals("Found entity is not same with added entity",disk,manager.findEntity(id));
         manager.removeEntity(disk);
         assertNull("found an entity after remove it",manager.findEntity(id));
-
+        }catch (EntityException ex){}
     }
     @Test
     public void testFindEntityWithNameAndAuthor(){
@@ -87,8 +86,8 @@ public class ManagerEntitiesImplTest {
 
 
     @Test
-    public void testRemoveEntity() throws Exception
-    {
+    public void testRemoveEntity() throws Exception{
+    try{
         try{
             manager.removeEntity(null);
             fail("Manager remove null object");
@@ -108,6 +107,7 @@ public class ManagerEntitiesImplTest {
         found = manager.findEntity("Visual C#", "John Sharp");
 
         assertNull("Found book should be null after remove", found);
+    }catch(EntityException ex){}
     }
 
     @Test

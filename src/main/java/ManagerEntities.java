@@ -12,7 +12,7 @@ public interface ManagerEntities {
 
     void addEntity(Entity entity) throws EntityException;
 
-    void removeEntity(Entity entity);
+    void removeEntity(Entity entity) throws EntityException;
 
     void editEntity(Entity oldEntity, Entity newEntity) throws  EntityException;
 
