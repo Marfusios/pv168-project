@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a574ad62-a16a-400f-a34f-dd3e2baa70b0" name="Default" comment="Added generated tests.">
+    <list default="true" id="a574ad62-a16a-400f-a34f-dd3e2baa70b0" name="Default" comment="AddEntity">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDB/log/log.ctrl" afterPath="$PROJECT_DIR$/EvidencyDB/log/log.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDB/log/log1.dat" afterPath="$PROJECT_DIR$/EvidencyDB/log/log1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDB/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/EvidencyDB/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Entity.java" afterPath="$PROJECT_DIR$/src/main/java/Entity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ManagerEntities.java" afterPath="$PROJECT_DIR$/src/main/java/ManagerEntities.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDB/db.lck" afterPath="$PROJECT_DIR$/EvidencyDB/db.lck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pv168-project.iml" afterPath="$PROJECT_DIR$/pv168-project.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pv168-project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364414884793" ignored="false" />
+    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364416068423" ignored="false" />
     <file path="/Main.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364405851257" ignored="false" />
-    <file path="/ManagerEntities.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364415866912" ignored="false" />
+    <file path="/ManagerEntities.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364417485196" ignored="false" />
     <file path="/Entita.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201079247" ignored="false" />
-    <file path="/ManagerEntitiesImpl.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364415840260" ignored="false" />
+    <file path="/ManagerEntitiesImpl.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364417506857" ignored="false" />
     <file path="/Disk.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364411004659" ignored="false" />
     <file path="/Book.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364410984091" ignored="false" />
     <file path="/fragment.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201741122" ignored="false" />
-    <file path="/ManagerEntitiesImplTest.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364416014416" ignored="false" />
+    <file path="/ManagerEntitiesImplTest.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364417595113" ignored="false" />
     <file path="/Entity.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364415795908" ignored="false" />
     <file path="/EvidencyDB" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364406068226" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -115,12 +113,21 @@
       <file leaf-file-name="ManagerEntitiesImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="7" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+            <state line="117" column="40" selection-start="3757" selection-end="3757" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc;n#log#0;n#ManagerEntitiesImpl#0" expanded="false" />
                 <element signature="n#!!doc;n#ManagerEntitiesImpl#0;n#ManagerEntitiesImpl#0" expanded="false" />
                 <element signature="method#ManagerEntitiesImpl#0;class#ManagerEntitiesImpl#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/EntityException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="4" selection-start="208" selection-end="302" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -153,7 +160,7 @@
       <file leaf-file-name="ManagerEntitiesImplTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="38" selection-start="4869" selection-end="4869" vertical-scroll-proportion="0.88235295">
+            <state line="171" column="2" selection-start="5612" selection-end="5612" vertical-scroll-proportion="1.2716264">
               <folding />
             </state>
           </provider>
@@ -162,7 +169,7 @@
       <file leaf-file-name="ManagerEntities.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="26" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+            <state line="16" column="79" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -206,8 +213,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/Disk.java" />
         <option value="$PROJECT_DIR$/src/main/java/Entity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ManagerEntities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" />
       </list>
     </option>
@@ -941,7 +948,11 @@
       <created>1363207038677</created>
       <updated>1363207038677</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="AddEntity">
+      <created>1364416054771</created>
+      <updated>1364416054771</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1013,7 +1024,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added generated tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="AddEntity" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1030,6 +1041,7 @@
     <MESSAGE value="Second commit" />
     <MESSAGE value="Added generated classes." />
     <MESSAGE value="Added generated tests." />
+    <MESSAGE value="AddEntity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1080,13 +1092,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/GenreEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="39" selection-start="57" selection-end="57" vertical-scroll-proportion="0.03908046">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EntityException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="4" selection-start="208" selection-end="302" vertical-scroll-proportion="0.17586207">
           <folding />
         </state>
       </provider>
@@ -1152,9 +1157,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/EntityException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="4" selection-start="208" selection-end="302" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="79" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="7" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+        <state line="117" column="40" selection-start="3757" selection-end="3757" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc;n#log#0;n#ManagerEntitiesImpl#0" expanded="false" />
             <element signature="n#!!doc;n#ManagerEntitiesImpl#0;n#ManagerEntitiesImpl#0" expanded="false" />
@@ -1163,16 +1182,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="38" selection-start="4869" selection-end="4869" vertical-scroll-proportion="0.88235295">
+        <state line="171" column="2" selection-start="5612" selection-end="5612" vertical-scroll-proportion="1.2716264">
           <folding />
         </state>
       </provider>

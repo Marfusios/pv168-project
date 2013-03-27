@@ -106,8 +106,76 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 	 * @param oldEntity
 	 * @param newEntity
 	 */
-	public void editEntity(Entity oldEntity, Entity newEntity) {
-		throw new UnsupportedOperationException();
+	public void editEntity(Entity oldEntity, Entity newEntity) throws EntityException {
+        Connection con = null;
+        PreparedStatement st = null;
+        try {
+            con = dataSource.getConnection();
+            //začátek SQL operace
+            st = con.prepareStatement("update entities set name=?, author=?, releaseyear=?, position=?, genre=? where id=?");
+            st.setString(1, newEntity.getName());
+            st.setString(2, newEntity.getAuthor());
+            st.setDate(3,(java.sql.Date)newEntity.getReleaseYear());
+            st.setString(4,newEntity.getPosition());
+            st.setString(5,newEntity.getGenre().toString());
+            st.setLong(6,oldEntity.getId());
+            int n = st.executeUpdate();
+            if(n!=1) {
+                throw new EntityException("not updated entity with id "+oldEntity.getId(),null);
+            }
+            if(newEntity instanceof Book){
+                Book book=(Book)newEntity;
+                if(oldEntity instanceof Book){
+                    st = con.prepareStatement("update books set pagecount=? values (?) where id=?") ;
+                    st.setInt(1,book.getPageCount());
+                    st.setLong(2,oldEntity.getId());
+                }else{
+                    st = con.prepareStatement("insert into books (id,pagecount) values (?,?)",PreparedStatement.NO_GENERATED_KEYS);
+                    st.setLong(1,oldEntity.getId());
+                    st.setInt(2,book.getPageCount());
+                }
+                st.executeUpdate();
+                if(n!=1) {
+                    throw new EntityException("not updated entity with id "+oldEntity.getId(),null);
+                }
+            }
+            if(newEntity instanceof Disk){
+                Disk disk=(Disk)newEntity;
+                if(oldEntity instanceof Disk){
+                    st = con.prepareStatement("update disks set kind=?, type=? values (?,?) where id=?") ;
+                    st.setString(1,disk.getKind().toString());
+                    st.setString(2,disk.getType().toString());
+                    st.setLong(3,oldEntity.getId());
+                }else{
+                    st = con.prepareStatement("insert into disks (id,kind,type) values (?,?,?)",PreparedStatement.NO_GENERATED_KEYS);
+                    st.setLong(1,oldEntity.getId());
+                    st.setString(2,disk.getKind().toString());
+                    st.setString(3,disk.getType().toString());
+                }
+                st.executeUpdate();
+                if(n!=1) {
+                    throw new EntityException("not updated entity with id "+oldEntity.getId(),null);
+                }
+            }
+        } catch (SQLException e) {
+            log.error("cannot update entity", e);
+            throw new EntityException("database update failed", e);
+        } finally {
+            if (st != null) {
+                try {
+                    st.close();
+                } catch (SQLException e) {
+                    log.error("cannot close statement", e);
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    log.error("cannot close connection", e);
+                }
+            }
+        }
 	}
 
 	/**

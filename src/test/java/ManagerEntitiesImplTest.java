@@ -146,8 +146,8 @@ public class ManagerEntitiesImplTest {
     }
 
     @Test
-    public void testEditEntity()
-    {
+    public void testEditEntity(){
+        try{
         try{
             manager.editEntity(null, new Book("TestName", "TestAuthor"));
             fail("Manager modify null object");
@@ -168,5 +168,6 @@ public class ManagerEntitiesImplTest {
 
         assertEquals("Entity was modified badly", found.getPosition(), "Position");
 
-    }
+    }catch (EntityException e) {}
+  }
 }
