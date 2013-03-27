@@ -10,13 +10,13 @@ import java.util.List;
  */
 public interface ManagerEntities {
 
-    void addEntity(Entity entity);
+    void addEntity(Entity entity) throws EntityException;
 
     void removeEntity(Entity entity);
 
     void editEntity(Entity oldEntity, Entity newEntity);
 
-    Entity findEntity(int id);
+    Entity findEntity(long id);
 
     Entity findEntity(String name, String author);
 

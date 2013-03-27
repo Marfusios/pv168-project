@@ -37,8 +37,59 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 	 * 
 	 * @param entity
 	 */
-	public void addEntity(Entity entity) {
-		//throw new UnsupportedOperationException();
+	public void addEntity(Entity entity) throws EntityException {
+        Connection con = null;
+        PreparedStatement st = null;
+        Long id;
+        try {
+            con = dataSource.getConnection();
+            //začátek SQL operace
+            st = con.prepareStatement("insert into entities (name,author,releaseyear,position,genre) values (?,?,?,?,?)", PreparedStatement.RETURN_GENERATED_KEYS);
+            st.setString(1, entity.getName());
+            st.setString(2, entity.getAuthor());
+            st.setDate(3,(java.sql.Date)entity.getReleaseYear());
+            st.setString(4,entity.getPosition());
+            st.setString(5,entity.getGenre().toString());
+            st.executeUpdate();
+            ResultSet keys = st.getGeneratedKeys();
+            if (keys.next()) {
+                id = keys.getLong(1);
+                entity.setId(id);
+            }
+
+                if(entity instanceof Book){
+                     Book book=(Book)entity;
+                     st = con.prepareStatement("insert into books (id,pagecount) values (id,?)",PreparedStatement.NO_GENERATED_KEYS) ;
+                     st.setInt(1,book.getPageCount());
+                     st.executeUpdate();
+                }
+                if(entity instanceof Disk){
+                   Disk disk = (Disk) entity;
+                    st = con.prepareStatement("insert into disks (id,kind,type) values (id,?)",PreparedStatement.NO_GENERATED_KEYS);
+                    st.setString(1,disk.getKind().toString());
+                    st.setString(2,disk.getType().toString());
+                    st.executeUpdate();
+                }
+
+        } catch (SQLException e) {
+            log.error("cannot insert entity", e);
+            throw new EntityException("database insert failed", e);
+        } finally {
+            if (st != null) {
+                try {
+                    st.close();
+                } catch (SQLException e) {
+                    log.error("cannot close statement", e);
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    log.error("cannot close connection", e);
+                }
+            }
+        }
 	}
 
 
@@ -63,7 +114,7 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 	 * 
 	 * @param id
 	 */
-	public Entity findEntity(int id) {
+	public Entity findEntity(long id) {
 		Book tmp = new Book("Name", "Test");
         tmp.setId(0);
 

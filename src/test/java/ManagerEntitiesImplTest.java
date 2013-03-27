@@ -24,7 +24,7 @@ public class ManagerEntitiesImplTest {
 
     @Test
      public void testAddEntityDisk() {
-
+      try{
          try{
              manager.addEntity(null);
              fail("Manager added null object");
@@ -55,13 +55,15 @@ public class ManagerEntitiesImplTest {
         Entity result = manager.findEntity(disk.getId());
         assertNotNull("Added entities not found",result);
 
-
+      }catch (EntityException ex){}
     }
     @Test
     public void testFindEntityWithID(){
         Disk disk = new Disk("the best","Lolita");
+        try{
         manager.addEntity(disk);
-        int id=disk.getId();
+        }catch(EntityException ex ) {}
+        long id=disk.getId();
         assertEquals("Found entity is not same with added entity",disk,manager.findEntity(id));
         manager.removeEntity(disk);
         assertNull("found an entity after remove it",manager.findEntity(id));
@@ -70,7 +72,9 @@ public class ManagerEntitiesImplTest {
     @Test
     public void testFindEntityWithNameAndAuthor(){
         Disk disk = new Disk("the best","Lolita");
-        manager.addEntity(disk);
+        try{
+            manager.addEntity(disk);
+        }catch(EntityException ex ) {}
         assertEquals("Found entity is not same with added entity",disk,manager.findEntity("the best","Lolita"));
         assertNotSame("Found entity with wrong name is same with added entity",disk,manager.findEntity("best the","Lolita"));
         assertNotSame("Found entity with wrong author is same with added entity",disk,manager.findEntity("the best","Orange"));
@@ -91,7 +95,9 @@ public class ManagerEntitiesImplTest {
         }catch(NullPointerException ex){}
 
         Book tmpBook = new Book("Visual C#", "John Sharp");
-        manager.addEntity(tmpBook);
+        try{
+            manager.addEntity(tmpBook);
+        }catch(EntityException ex ) {}
 
         Entity found = manager.findEntity("Visual C#", "John Sharp");
 
@@ -124,7 +130,9 @@ public class ManagerEntitiesImplTest {
             assertTrue("Entity list isn't empty. Method removeEntity does not work correctly.", tmpList.isEmpty());
 
             Book tmpBook = new Book("The godfather","Mario Puzo");
-            manager.addEntity(tmpBook);
+            try{
+                manager.addEntity(tmpBook);
+            }catch(EntityException ex ) {}
             tmpList = manager.getEntitiesList();
 
             assertFalse("Entity list is empty. Method addEntity does not work correctly.", tmpList.isEmpty());
@@ -144,9 +152,9 @@ public class ManagerEntitiesImplTest {
             manager.editEntity(null, new Book("TestName", "TestAuthor"));
             fail("Manager modify null object");
         }catch(NullPointerException ex){}
-
+        try{
         manager.addEntity(new Book("Visual C#", "John Sharp"));
-
+        }catch (EntityException ex) {}
         Entity oldEntity = manager.findEntity("Visual C#", "John Sharp");
         assertNotNull("Found entity is null", oldEntity);
 

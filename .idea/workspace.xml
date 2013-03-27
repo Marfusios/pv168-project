@@ -1,98 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a574ad62-a16a-400f-a34f-dd3e2baa70b0" name="Default" comment="Implemented first method in the ManagerEntitiesImpl">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c10.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c101.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c111.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c121.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c130.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c141.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c150.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c161.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c171.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c180.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c191.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c1a1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c1b1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c1c0.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c1d1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c1e0.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c1f1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c20.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c200.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c211.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c221.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c230.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c241.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c251.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c260.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c271.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c281.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c290.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c2a1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c2b1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c2c1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c2d0.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c2e1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c2f0.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c300.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c31.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c311.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c321.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c331.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c340.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c351.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c361.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c371.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c380.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c391.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c3a1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c3b1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c3c0.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c3d1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c3e1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c3f1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c41.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c51.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c60.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c71.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c81.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/c90.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/ca1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/cb1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/cc0.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/cd1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/ce1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/seg0/cf0.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/derby-10.5.3.0_1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/derbynet-10.5.3.0_1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/log/log.ctrl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/log/log1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/log/logmirror.ctrl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ManagerDB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/db.lck" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EvidencyDB/service.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace_.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
+    <list default="true" id="a574ad62-a16a-400f-a34f-dd3e2baa70b0" name="Default" comment="Added generated tests.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDB/log/log.ctrl" afterPath="$PROJECT_DIR$/EvidencyDB/log/log.ctrl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDB/log/log1.dat" afterPath="$PROJECT_DIR$/EvidencyDB/log/log1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDB/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/EvidencyDB/log/logmirror.ctrl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Entity.java" afterPath="$PROJECT_DIR$/src/main/java/Entity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ManagerEntities.java" afterPath="$PROJECT_DIR$/src/main/java/ManagerEntities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDB/db.lck" afterPath="$PROJECT_DIR$/EvidencyDB/db.lck" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pv168-project.iml" afterPath="$PROJECT_DIR$/pv168-project.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pv168-project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364414688960" ignored="false" />
-    <file path="/Main.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364414147934" ignored="false" />
-    <file path="/ManagerEntities.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201152441" ignored="false" />
+    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364414884793" ignored="false" />
+    <file path="/Main.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364405851257" ignored="false" />
+    <file path="/ManagerEntities.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364415866912" ignored="false" />
     <file path="/Entita.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201079247" ignored="false" />
-    <file path="/ManagerEntitiesImpl.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364410713520" ignored="false" />
+    <file path="/ManagerEntitiesImpl.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364415840260" ignored="false" />
     <file path="/Disk.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364411004659" ignored="false" />
     <file path="/Book.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364410984091" ignored="false" />
     <file path="/fragment.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201741122" ignored="false" />
-    <file path="/ManagerEntitiesImplTest.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364410375526" ignored="false" />
-    <file path="/Entity.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364410824133" ignored="false" />
+    <file path="/ManagerEntitiesImplTest.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364416014416" ignored="false" />
+    <file path="/Entity.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364415795908" ignored="false" />
     <file path="/EvidencyDB" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364406068226" ignored="false" />
-    <file path="/ManagerDB.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364413728860" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +46,6 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -147,6 +80,25 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <method_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/Entity.java" line="16" class="Entity" package="">
+        <option name="WATCH_ENTRY" value="true" />
+        <option name="WATCH_EXIT" value="true" />
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </method_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -163,7 +115,7 @@
       <file leaf-file-name="ManagerEntitiesImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="749" selection-end="749" vertical-scroll-proportion="0.0">
+            <state line="13" column="7" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc;n#log#0;n#ManagerEntitiesImpl#0" expanded="false" />
                 <element signature="n#!!doc;n#ManagerEntitiesImpl#0;n#ManagerEntitiesImpl#0" expanded="false" />
@@ -173,22 +125,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="10" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
+            <state line="37" column="26" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc;n#Entity#0;n#Entity#0" expanded="false" />
+                <element signature="method#Entity#0;class#Entity#0" expanded="false" />
+                <element signature="method#Entity#1;class#Entity#0" expanded="false" />
+                <element signature="method#getId#0;class#Entity#0" expanded="false" />
+                <element signature="method#setId#0;class#Entity#0" expanded="false" />
+                <element signature="method#getName#0;class#Entity#0" expanded="false" />
+                <element signature="method#setName#0;class#Entity#0" expanded="false" />
+                <element signature="method#getReleaseYear#0;class#Entity#0" expanded="false" />
+                <element signature="method#setReleaseYear#0;class#Entity#0" expanded="false" />
+                <element signature="method#getAuthor#0;class#Entity#0" expanded="false" />
+                <element signature="method#setAuthor#0;class#Entity#0" expanded="false" />
+                <element signature="method#getPosition#0;class#Entity#0" expanded="false" />
+                <element signature="method#setPosition#0;class#Entity#0" expanded="false" />
+                <element signature="method#getGenre#0;class#Entity#0" expanded="false" />
+                <element signature="method#setGenre#0;class#Entity#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManagerEntitiesImplTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="156" column="38" selection-start="4869" selection-end="4869" vertical-scroll-proportion="0.88235295">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManagerDB.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ManagerEntities.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="26" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManagerDB.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ManagerDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="53" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.28588098">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="33" column="32" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -205,7 +189,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
-    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -217,16 +200,15 @@
         <option value="$PROJECT_DIR$/src/main/java/KindEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/TypeEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/Entita.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ManagerEntities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="db-console:/708b1eb9/06838acb-1398-4011-b5aa-45a483693d13/" />
-        <option value="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/EntityException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entity.java" />
         <option value="$PROJECT_DIR$/src/main/java/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/Disk.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ManagerDB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Entity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ManagerEntities.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" />
       </list>
     </option>
   </component>
@@ -240,7 +222,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -693,11 +675,13 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -713,6 +697,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -731,14 +716,53 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pv168-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pv168-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pv168-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pv168-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="project.structure.proportion" value="0.0" />
@@ -747,17 +771,16 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="reference.settings.ide.settings.uml" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -918,22 +941,17 @@
       <created>1363207038677</created>
       <updated>1363207038677</updated>
     </task>
-    <task id="LOCAL-00008" summary="Implemented first method in the ManagerEntitiesImpl">
-      <created>1364411117968</created>
-      <updated>1364411117968</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33035713" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977587" sideWeight="0.66964287" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12032086" sideWeight="0.67335564" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955357" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -941,14 +959,15 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700893" sideWeight="0.42102456" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32664436" sideWeight="0.42102456" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24439701" sideWeight="0.66964287" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700893" sideWeight="0.48292422" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24438503" sideWeight="0.67335564" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32664436" sideWeight="0.48292422" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -994,7 +1013,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented first method in the ManagerEntitiesImpl" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added generated tests." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1011,7 +1030,6 @@
     <MESSAGE value="Second commit" />
     <MESSAGE value="Added generated classes." />
     <MESSAGE value="Added generated tests." />
-    <MESSAGE value="Implemented first method in the ManagerEntitiesImpl" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1021,11 +1039,23 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntities.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+        <state line="7" column="17" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KindEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pv168-project.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/junit/framework/Assert.class">
@@ -1040,16 +1070,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="76" selection-start="4828" selection-end="4828" vertical-scroll-proportion="2.8724139">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://db-console:/708b1eb9/06838acb-1398-4011-b5aa-45a483693d13/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="0" selection-end="20" vertical-scroll-proportion="0.0">
+        <state line="22" column="30" selection-start="600" selection-end="600" vertical-scroll-proportion="0.31264368">
           <folding />
         </state>
       </provider>
@@ -1079,31 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="4" selection-start="676" selection-end="676" vertical-scroll-proportion="0.1954023">
-          <folding>
-            <element signature="n#!!doc;n#id#0;n#Entity#0" expanded="false" />
-            <element signature="n#!!doc;n#Entity#0;n#Entity#0" expanded="false" />
-            <element signature="method#Entity#0;class#Entity#0" expanded="false" />
-            <element signature="method#Entity#1;class#Entity#0" expanded="false" />
-            <element signature="n#!!doc;n#getId#0;n#Entity#0" expanded="false" />
-            <element signature="method#getId#0;class#Entity#0" expanded="false" />
-            <element signature="method#setId#0;class#Entity#0" expanded="false" />
-            <element signature="method#getName#0;class#Entity#0" expanded="false" />
-            <element signature="method#setName#0;class#Entity#0" expanded="false" />
-            <element signature="method#getReleaseYear#0;class#Entity#0" expanded="false" />
-            <element signature="method#setReleaseYear#0;class#Entity#0" expanded="false" />
-            <element signature="method#getAuthor#0;class#Entity#0" expanded="false" />
-            <element signature="method#setAuthor#0;class#Entity#0" expanded="false" />
-            <element signature="method#getPosition#0;class#Entity#0" expanded="false" />
-            <element signature="method#setPosition#0;class#Entity#0" expanded="false" />
-            <element signature="method#getGenre#0;class#Entity#0" expanded="false" />
-            <element signature="method#setGenre#0;class#Entity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.21494253">
@@ -1124,31 +1122,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/06838acb-1398-4011-b5aa-45a483693d13.schema:ADMIN">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>06838acb-1398-4011-b5aa-45a483693d13.schema:ADMIN</OriginalElement>
-          <nodes>
-            <node x="" y="">06838acb-1398-4011-b5aa-45a483693d13.table:ADMIN.DISKS</node>
-            <node x="" y="">06838acb-1398-4011-b5aa-45a483693d13.table:ADMIN.ENTITIES</node>
-            <node x="" y="">06838acb-1398-4011-b5aa-45a483693d13.table:ADMIN.BOOKS</node>
-            <node x="" y="">06838acb-1398-4011-b5aa-45a483693d13.table:ADMIN.GENRES</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="111.0" y="192.5" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ManagerDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="32" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="26" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc;n#Entity#0;n#Entity#0" expanded="false" />
+            <element signature="method#Entity#0;class#Entity#0" expanded="false" />
+            <element signature="method#Entity#1;class#Entity#0" expanded="false" />
+            <element signature="method#getId#0;class#Entity#0" expanded="false" />
+            <element signature="method#setId#0;class#Entity#0" expanded="false" />
+            <element signature="method#getName#0;class#Entity#0" expanded="false" />
+            <element signature="method#setName#0;class#Entity#0" expanded="false" />
+            <element signature="method#getReleaseYear#0;class#Entity#0" expanded="false" />
+            <element signature="method#setReleaseYear#0;class#Entity#0" expanded="false" />
+            <element signature="method#getAuthor#0;class#Entity#0" expanded="false" />
+            <element signature="method#setAuthor#0;class#Entity#0" expanded="false" />
+            <element signature="method#getPosition#0;class#Entity#0" expanded="false" />
+            <element signature="method#setPosition#0;class#Entity#0" expanded="false" />
+            <element signature="method#getGenre#0;class#Entity#0" expanded="false" />
+            <element signature="method#setGenre#0;class#Entity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="749" selection-end="749" vertical-scroll-proportion="0.0">
+        <state line="13" column="7" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc;n#log#0;n#ManagerEntitiesImpl#0" expanded="false" />
             <element signature="n#!!doc;n#ManagerEntitiesImpl#0;n#ManagerEntitiesImpl#0" expanded="false" />
@@ -1157,26 +1163,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="10" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
+        <state line="18" column="26" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/derby.log">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="156" column="38" selection-start="4869" selection-end="4869" vertical-scroll-proportion="0.88235295">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ManagerDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="53" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.28588098">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1245,7 +1242,6 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.0.9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

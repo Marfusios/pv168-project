@@ -1,8 +1,8 @@
-2013-03-27 19:56:25.950 GMT : Apache Derby Network Server - 10.5.3.0 - (802917) started and ready to accept connections on port 1527
+2013-03-27 20:27:05.039 GMT : Síťový server Apache Derby - 10.5.3.0 - (802917): spuštěn a připraven přijímat připojení na portu 1527 v {3} 
 ----------------------------------------------------------------
-2013-03-27 19:56:26.159 GMT:
- Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance a816c00e-013d-ad6c-4195-00000677d790
-on database directory C:\Users\m4r10\IdeaProjects\pv168-project\EvidencyDB  
+2013-03-27 20:27:05.465 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance a816c00e-013d-ad88-4fa6-00000362f5b8
+on database directory D:\Studium\pv168\pv168-project\pv168-project\EvidencyDB  
 
 Database Class Loader started - derby.database.classpath=''
-2013-03-27 19:56:26.758 GMT : Apache Derby Network Server - 10.5.3.0 - (802917) shutdown
+2013-03-27 20:27:05.976 GMT : Síťový server Apache Derby - 10.5.3.0 - (802917): vypínání v {2}
