@@ -2,6 +2,7 @@ import java.util.Date;
 
 public abstract class Entity {
 
+    //region PROPERTIES & FIELDS
     private int id;
 	private String name;
 	private Date releaseYear;
@@ -9,6 +10,10 @@ public abstract class Entity {
 	private String position;
 	private GenreEnum genre;
 
+    //endregion
+
+
+    //region CONSTRUCTORS
     public Entity(String name, String author) {
         this.name=name;
         this.author=author;
@@ -22,7 +27,10 @@ public abstract class Entity {
         this.genre = genre;
     }
 
+    //endregion
 
+
+    //region GETTERS & SETTERS
     public int getId() {
         return id;
     }
@@ -70,4 +78,6 @@ public abstract class Entity {
     public void setGenre(GenreEnum genre) {
         this.genre = genre;
     }
+
+    //endregion
 }

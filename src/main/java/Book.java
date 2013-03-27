@@ -2,8 +2,13 @@ import java.util.Date;
 
 public class Book extends Entity {
 
+    //region PROPERTIES & FIELDS
 	private int pageCount;
 
+    //endregion
+
+
+    //region CONSTRUCTORS
     public Book(String name, String author) {
         super(name, author);
     }
@@ -13,7 +18,10 @@ public class Book extends Entity {
         this.pageCount = pageCount;
     }
 
+    //endregion
 
+
+    //region GETTERS & SETTERS
     public int getPageCount() {
 		return this.pageCount;
 	}
@@ -26,5 +34,6 @@ public class Book extends Entity {
 		this.pageCount = pageCount;
 	}
 
+    //endregion
 
 }

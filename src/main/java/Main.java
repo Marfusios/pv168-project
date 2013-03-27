@@ -11,7 +11,6 @@ import org.apache.derby.jdbc.ClientDataSource;
 public class Main {
 
     public static void main(String[] args) throws EntityException {
-        //String url = "jdbc:derby://localhost:1527/MojeDB";
 
         ClientDataSource ds = new ClientDataSource();
         ds.setServerName("localhost");
@@ -20,9 +19,7 @@ public class Main {
         ds.setUser("admin");
         ds.setPassword("password");
 
-        ManagerEntities bookManager = new ManagerEntitiesImpl(ds);
+        ManagerEntities entitiesManager = new ManagerEntitiesImpl(ds);
 
-        //List<Book> allBooks = bookManager.getAllBooks();
-        //System.out.println("allBooks = " + allBooks);
     }
 }

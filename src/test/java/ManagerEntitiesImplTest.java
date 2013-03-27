@@ -107,28 +107,34 @@ public class ManagerEntitiesImplTest {
     @Test
     public void testGetEntitiesList()
     {
-
-        List<Entity> tmpList = manager.getEntitiesList();
-
-        assertNotNull(tmpList);
-        if(!tmpList.isEmpty())
+        try
         {
-            for(Entity one : tmpList)
+            List<Entity> tmpList = manager.getEntitiesList();
+
+            assertNotNull(tmpList);
+            if(!tmpList.isEmpty())
             {
-                manager.removeEntity(one);
+                for(Entity one : tmpList)
+                {
+                    manager.removeEntity(one);
+                }
             }
+
+            tmpList = manager.getEntitiesList();
+            assertTrue("Entity list isn't empty. Method removeEntity does not work correctly.", tmpList.isEmpty());
+
+            Book tmpBook = new Book("The godfather","Mario Puzo");
+            manager.addEntity(tmpBook);
+            tmpList = manager.getEntitiesList();
+
+            assertFalse("Entity list is empty. Method addEntity does not work correctly.", tmpList.isEmpty());
+            assertTrue("In the list is more than one element.",tmpList.size() == 1);
+            assertEquals("The book from list is not equal tmpBook",tmpBook, tmpList.get(0));
         }
-
-        tmpList = manager.getEntitiesList();
-        assertTrue("Entity list isn't empty. Method removeEntity does not work correctly.", tmpList.isEmpty());
-
-        Book tmpBook = new Book("The godfather","Mario Puzo");
-        manager.addEntity(tmpBook);
-        tmpList = manager.getEntitiesList();
-
-        assertFalse("Entity list is empty. Method addEntity does not work correctly.", tmpList.isEmpty());
-        assertTrue("In the list is more than one element.",tmpList.size() == 1);
-        assertEquals("The book from list is not equal tmpBook",tmpBook, tmpList.get(0));
+        catch (EntityException enEx)
+        {
+            fail("Cannot get entities list " + enEx.toString());
+        }
     }
 
     @Test
@@ -142,17 +148,17 @@ public class ManagerEntitiesImplTest {
         manager.addEntity(new Book("Visual C#", "John Sharp"));
 
         Entity oldEntity = manager.findEntity("Visual C#", "John Sharp");
-        assertNotNull("Finded entity is null", oldEntity);
+        assertNotNull("Found entity is null", oldEntity);
 
         manager.editEntity(oldEntity, new Book("C#", oldEntity.getAuthor()));
-        Entity finded = manager.findEntity("C#", oldEntity.getAuthor());
-        assertNotNull("Modified entity is not in the DB", finded);
+        Entity found = manager.findEntity("C#", oldEntity.getAuthor());
+        assertNotNull("Modified entity is not in the DB", found);
 
-        manager.editEntity(finded , new Book(finded.getName(), new Date(12), finded.getAuthor(), "Position", GenreEnum.COMEDY, 580));
-        finded = manager.findEntity("C#", oldEntity.getAuthor());
-        assertNotNull("Modified entity is not in the DB", finded);
+        manager.editEntity(found , new Book(found.getName(), new Date(12), found.getAuthor(), "Position", GenreEnum.COMEDY, 580));
+        found = manager.findEntity("C#", oldEntity.getAuthor());
+        assertNotNull("Modified entity is not in the DB", found);
 
-        assertEquals("Entity was modified badly", finded.getPosition(), "Position");
+        assertEquals("Entity was modified badly", found.getPosition(), "Position");
 
     }
 }

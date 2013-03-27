@@ -2,9 +2,14 @@ import java.util.Date;
 
 public class Disk extends Entity {
 
+    //region PROPERTIES & FIELDS
 	private KindEnum kind;
 	private TypeEnum type;
 
+    //endregion
+
+
+    //region CONSTRUCTORS
     public Disk(String name, String author) {
         super(name, author);
     }
@@ -15,7 +20,10 @@ public class Disk extends Entity {
         this.type = type;
     }
 
+    //endregion
 
+
+    //region GETTERS & SETTERS
     /**
 	 * 
 	 * @param kind
@@ -40,5 +48,5 @@ public class Disk extends Entity {
 		this.type = type;
 	}
 
-
+     //endregion
 }
