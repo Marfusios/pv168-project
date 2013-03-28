@@ -2,7 +2,6 @@ import org.apache.derby.drda.NetworkServerControl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.sql.DataSource;
 import java.net.InetAddress;
 import java.sql.*;
 
@@ -23,6 +22,7 @@ public class ManagerDB {
         try {
             ManagerDB.server = new NetworkServerControl(InetAddress.getByName("localhost"), 1527);
             ManagerDB.server.start(null);
+            ManagerDB.log.info("SERVER STARTED");
             return true;
         } catch (Exception e1) {
             ManagerDB.log.error("Cannot start server", e1);
@@ -35,6 +35,7 @@ public class ManagerDB {
         try
         {
             ManagerDB.server.shutdown();
+            ManagerDB.log.info("SERVER STOPPED");
             return true;
         }
         catch (Exception ex)
@@ -48,60 +49,65 @@ public class ManagerDB {
     {
         try {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
+            ManagerDB.log.info("Class was found");
         } catch (InstantiationException e) {
-           log.error("EmbeddedDriver not found", e);
+            ManagerDB.log.error("EmbeddedDriver not found", e);
         } catch (IllegalAccessException e) {
-            log.error("EmbeddedDriver not found 2", e);
+            ManagerDB.log.error("EmbeddedDriver not found 2", e);
         } catch (ClassNotFoundException e) {
-            log.error("EmbeddedDriver not found 3", e);
+            ManagerDB.log.error("EmbeddedDriver not found 3", e);
         }
 
         Connection conn = null;
-        PreparedStatement prestat = null;
         Statement stmt;
 
         try {
-            conn = DriverManager.getConnection("jdbc:derby://localhost:1527/EvidencyDB;user=admin;password=password;create=true");
+            conn = DriverManager.getConnection("jdbc:derby://localhost:1527/EvidencyDBEmbedded;user=root;password=password;create=true");
+            ManagerDB.log.info("Connection established");
 
             stmt = conn.createStatement();
             try
             {
-                stmt.execute("CREATE TABLE entities (id INT NOT NULL GENERATED ALWAYS AS IDENTITY CONSTRAINT entities_pk PRIMARY KEY, name VARCHAR(64), author VARCHAR(32), releaseYear DATE, position VARCHAR(128), genre VARCHAR(32) CONSTRAINT genre_fk REFERENCES genres)");
                 stmt.execute("CREATE TABLE genres (genre VARCHAR(32) NOT NULL CONSTRAINT genres_pk PRIMARY KEY )");
+                ManagerDB.log.info("Created table: genres");
+
+                stmt.execute("CREATE TABLE entities (id INT NOT NULL GENERATED ALWAYS AS IDENTITY CONSTRAINT entities_pk PRIMARY KEY, name VARCHAR(64), author VARCHAR(32), releaseYear DATE, position VARCHAR(128), genre VARCHAR(32) CONSTRAINT genre_fk REFERENCES genres)");
+                ManagerDB.log.info("Created table: entities");
+
                 stmt.execute("CREATE TABLE books (id INT CONSTRAINT entities_id REFERENCES entities, pageCount INT)");
+                ManagerDB.log.info("Created table: books");
                 stmt.execute("CREATE TABLE disks (id INT CONSTRAINT disk_id_fk REFERENCES entities, kind VARCHAR(32) CONSTRAINT kind_ck CHECK (kind IN ('cd', 'dvd', 'blue-ray')), type VARCHAR(32) CONSTRAINT type_ck CHECK (type IN ('film', 'series', 'data', 'music', 'game')))");
+                ManagerDB.log.info("Created table: disks");
             }
             catch (Exception e) {
-                log.error("Cannot create table", e);
+                ManagerDB.log.info("Tables already created");
             }
 
             try
             {
+
                 stmt.execute("INSERT INTO genres (genre) VALUES ('COMEDY')");
                 stmt.execute("INSERT INTO genres (genre) VALUES ('THRILLER')");
                 stmt.execute("INSERT INTO genres (genre) VALUES ('DRAMA')");
                 stmt.execute("INSERT INTO genres (genre) VALUES ('POETRY')");
+                log.info("Values was insert");
             }
             catch (Exception e) {
-                log.error("Cannot insert values", e);
+                ManagerDB.log.info("Values already added");
             }
 
-            prestat.close();
             conn.close();
-
+            ManagerDB.log.error("Connection was closed");
             return true;
 
         } catch (SQLException e) {
-            log.error("Cannot create database",e);
+            ManagerDB.log.error("Cannot create database",e);
             return false;
         } catch (Exception e) {
-            log.error("Cannot create database 2",e);
+            ManagerDB.log.error("Cannot create database 2",e);
             return false;
         }
         finally{
-            if (prestat != null){
-                try { prestat.close();} catch (SQLException e){}
-            }
             if (conn != null){
                 try {conn.close();} catch(SQLException e) {}
             }

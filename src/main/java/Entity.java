@@ -103,4 +103,9 @@ public abstract class Entity {
         result = 31 * result + author.hashCode();
         return result;
     }
+
+    @Override
+    public String toString() {
+        return getId() + " " + getName() + " " + getAuthor() + " " + getReleaseYear();
+    }
 }

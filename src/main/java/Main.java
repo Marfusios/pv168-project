@@ -6,6 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
+
 import org.apache.derby.jdbc.ClientDataSource;
 
 import java.util.List;
@@ -14,25 +15,35 @@ public class Main {
 
     public static void main(String[] args) throws EntityException {
 
-        //ManagerDB.startServer();
-        //ManagerDB.createDatabase();
+        try
+        {
+        ManagerDB.startServer();
+        ManagerDB.createDatabase();
 
+        //region DATASOURCE
         ClientDataSource ds = new ClientDataSource();
         ds.setServerName("localhost");
         ds.setPortNumber(1527);
-        ds.setDatabaseName("EvidencyDB");
-        ds.setUser("admin");
+        ds.setDatabaseName("EvidencyDBEmbedded");
+        ds.setUser("root");
         ds.setPassword("password");
-
-
+        //endregion
 
         ManagerEntities entitiesManager = new ManagerEntitiesImpl(ds);
 
-        entitiesManager.addEntity(new Book("Heeej", "hou"));
+        //entitiesManager.addEntity(new Book("Heeej", "hou"));
 
         List<Entity> tmp = entitiesManager.getEntitiesList();
-        System.out.println(tmp.get(1).getName() + "  " + tmp.get(1).getAuthor());
+        System.out.print("ID | NAME | AUTHOR | RELEASE YEAR \n");
+        for(Entity one : tmp)
+        {
+            System.out.print(one.toString() + '\n');
+        }
+        }
 
-        //ManagerDB.closeServer();
+        finally {
+            ManagerDB.closeServer();
+        }
+
     }
 }

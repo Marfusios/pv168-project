@@ -21,15 +21,18 @@ public class ManagerEntitiesImplTest {
     @Before
     public void setUp() {
 
+        ManagerDB.startServer();
+
         ClientDataSource ds = new ClientDataSource();
         ds.setServerName("localhost");
         ds.setPortNumber(1527);
-        ds.setDatabaseName("EvidencyDB");
-        ds.setUser("admin");
+        ds.setDatabaseName("EvidencyDBEmbedded");
+        ds.setUser("root");
         ds.setPassword("password");
 
         manager = new ManagerEntitiesImpl(ds);
     }
+
 
     @Test
      public void testAddEntityDisk() {
@@ -66,6 +69,8 @@ public class ManagerEntitiesImplTest {
 
       }catch (EntityException ex){fail();}
     }
+
+
     @Test
     public void testFindEntityWithID(){
         try{
@@ -77,6 +82,8 @@ public class ManagerEntitiesImplTest {
         assertNull("found an entity after remove it",manager.findEntity(id));
         }catch (EntityException ex){}
     }
+
+
     @Test
     public void testFindEntityWithNameAndAuthor(){
         try
@@ -92,9 +99,6 @@ public class ManagerEntitiesImplTest {
         catch (EntityException ex) {fail();}
 
     }
-
-
-
 
 
 
@@ -122,6 +126,7 @@ public class ManagerEntitiesImplTest {
         assertNull("Found book should be null after remove", found);
     }catch(EntityException ex){fail();}
     }
+
 
     @Test
     public void testGetEntitiesList()
@@ -157,6 +162,7 @@ public class ManagerEntitiesImplTest {
             fail("Cannot get entities list " + enEx.toString());
         }
     }
+
 
     @Test
     public void testEditEntity(){

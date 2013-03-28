@@ -239,6 +239,7 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 		Book tmp = new Book("Name", "Test");
         tmp.setId(0);
 
+        //TODO implement it
         return tmp;
 	}
 
@@ -254,7 +255,7 @@ public class ManagerEntitiesImpl implements ManagerEntities {
             con = dataSource.getConnection();
 
             //SQL operation for BOOKS
-            st = con.prepareStatement("select * from entities natural join books WHERE name = ? AND author = ?");
+            st = con.prepareStatement("select * from entities, books WHERE entities.id = books.id AND name = ? AND author = ?");
             st.setString(1, name);
             st.setString(2, author);
             ResultSet rs = st.executeQuery();
@@ -276,7 +277,7 @@ public class ManagerEntitiesImpl implements ManagerEntities {
             }
 
             //SQL operation for DISKS
-            st = con.prepareStatement("select * from entities natural join disks WHERE name = ? AND author = ?");
+            st = con.prepareStatement("select * from entities, disks WHERE entities.id = disks.id AND name = ? AND author = ?");
             st.setString(1, name);
             st.setString(2, author);
             rs = st.executeQuery();
@@ -337,7 +338,7 @@ public class ManagerEntitiesImpl implements ManagerEntities {
             con = dataSource.getConnection();
 
             //SQL operation for BOOKS
-            st = con.prepareStatement("select * from entities natural join books");
+            st = con.prepareStatement("SELECT * FROM entities, books WHERE entities.id = books.id");
             ResultSet rs = st.executeQuery();
             while (rs.next()) {
                 long id = rs.getLong("id");
@@ -356,7 +357,7 @@ public class ManagerEntitiesImpl implements ManagerEntities {
             }
 
             //SQL operation for DISKS
-            st = con.prepareStatement("select * from entities natural join disks");
+            st = con.prepareStatement("select * from entities, disks where entities.id = disks.id");
             rs = st.executeQuery();
             while (rs.next()) {
                 long id = rs.getLong("id");
