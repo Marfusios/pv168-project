@@ -243,29 +243,46 @@ public class ManagerEntitiesImpl implements ManagerEntities {
             st = con.prepareStatement("select * from entities natural join books");
             ResultSet rs = st.executeQuery();
             while (rs.next()) {
-                int id = rs.getInt("id");
+                long id = rs.getLong("id");
                 String name = rs.getString("name");
                 String author = rs.getString("author");
                 Date releaseYear = rs.getDate("releaseYear");
                 String position = rs.getString("position");
-                GenreEnum genre = GenreEnum.valueOf(rs.getString("genre"));
+                GenreEnum genre = null;
+                if(rs.getString("genre") != null)
+                     genre = GenreEnum.valueOf(rs.getString("genre"));
                 int pageCount = rs.getInt("pageCount");
-                entities.add(new Book(name, releaseYear, author, position, genre, pageCount));
+
+                Book tmp = new Book(name, releaseYear, author, position, genre, pageCount);
+                tmp.setId(id);
+                entities.add(tmp);
             }
 
             //SQL operation for DISKS
             st = con.prepareStatement("select * from entities natural join disks");
             rs = st.executeQuery();
             while (rs.next()) {
-                int id = rs.getInt("id");
+                long id = rs.getLong("id");
                 String name = rs.getString("name");
                 String author = rs.getString("author");
                 Date releaseYear = rs.getDate("releaseYear");
                 String position = rs.getString("position");
-                GenreEnum genre = GenreEnum.valueOf(rs.getString("genre"));
-                KindEnum kind = KindEnum.valueOf(rs.getString("kind"));
-                TypeEnum type = TypeEnum.valueOf(rs.getString("type"));
-                entities.add(new Disk(name, releaseYear, author, position, genre, kind, type));
+
+                GenreEnum genre = null;
+                if(rs.getString("genre") != null)
+                    genre = GenreEnum.valueOf(rs.getString("genre"));
+
+                KindEnum kind = null;
+                if(rs.getString("kind") != null)
+                    kind = KindEnum.valueOf(rs.getString("kind"));
+
+                TypeEnum type = null;
+                if(rs.getString("type") != null)
+                    type = TypeEnum.valueOf(rs.getString("type"));
+
+                Disk tmp = new Disk(name, releaseYear, author, position, genre, kind, type);
+                tmp.setId(id);
+                entities.add(tmp);
             }
 
             return entities;

@@ -29,6 +29,7 @@ public class Main {
         ManagerEntities entitiesManager = new ManagerEntitiesImpl(ds);
 
         List<Entity> tmp = entitiesManager.getEntitiesList();
+        System.out.println(tmp.get(0).getName());
 
         //ManagerDB.closeServer();
     }
