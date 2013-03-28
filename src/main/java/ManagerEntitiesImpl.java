@@ -38,18 +38,24 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 	 * @param entity
 	 */
 	public void addEntity(Entity entity) throws EntityException {
+        if(entity == null) throw new NullPointerException("entity");
+
         Connection con = null;
         PreparedStatement st = null;
         Long id;
         try {
             con = dataSource.getConnection();
             //začátek SQL operace
-            st = con.prepareStatement("insert into entities (name,author,releaseyear,position,genre) values (?,?,?,?,?)", PreparedStatement.RETURN_GENERATED_KEYS);
+            st = con.prepareStatement("insert into entities (name,author,releaseYear,position,genre) values (?,?,?,?,?)", PreparedStatement.RETURN_GENERATED_KEYS);
             st.setString(1, entity.getName());
             st.setString(2, entity.getAuthor());
             st.setDate(3,(java.sql.Date)entity.getReleaseYear());
             st.setString(4,entity.getPosition());
-            st.setString(5,entity.getGenre().toString());
+
+            if(entity.getGenre() != null)
+                st.setString(5,entity.getGenre().toString());
+            else
+                st.setString(5,null);
             st.executeUpdate();
             ResultSet keys = st.getGeneratedKeys();
             if (keys.next()) {
@@ -59,15 +65,24 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 
                 if(entity instanceof Book){
                      Book book=(Book)entity;
-                     st = con.prepareStatement("insert into books (id,pagecount) values (id,?)",PreparedStatement.NO_GENERATED_KEYS) ;
-                     st.setInt(1,book.getPageCount());
+                     st = con.prepareStatement("insert into books (id,pageCount) values (?,?)",PreparedStatement.NO_GENERATED_KEYS) ;
+                     st.setLong(1, book.getId());
+                     st.setInt(2,book.getPageCount());
                      st.executeUpdate();
                 }
                 if(entity instanceof Disk){
                    Disk disk = (Disk) entity;
-                    st = con.prepareStatement("insert into disks (id,kind,type) values (id,?)",PreparedStatement.NO_GENERATED_KEYS);
-                    st.setString(1,disk.getKind().toString());
-                    st.setString(2,disk.getType().toString());
+                    st = con.prepareStatement("insert into disks (id,kind,type) values (?,?,?)",PreparedStatement.NO_GENERATED_KEYS);
+                    st.setLong(1,disk.getId());
+                    if(disk.getKind() != null)
+                        st.setString(2,disk.getKind().toString());
+                    else
+                        st.setString(2, null);
+
+                    if(disk.getType() != null)
+                        st.setString(3,disk.getType().toString());
+                    else
+                        st.setString(3,null);
                     st.executeUpdate();
                 }
 
@@ -98,6 +113,8 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 	 * @param entity
 	 */
 	public void removeEntity(Entity entity) throws EntityException {
+        if(entity == null) throw new NullPointerException("entity");
+
         Connection con = null;
         PreparedStatement st = null;
         try {
@@ -140,6 +157,9 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 	 * @param newEntity
 	 */
 	public void editEntity(Entity oldEntity, Entity newEntity) throws EntityException {
+        if(oldEntity == null) throw new NullPointerException("oldEntity");
+        if(newEntity == null) throw new NullPointerException("newEntity");
+
         Connection con = null;
         PreparedStatement st = null;
         try {
@@ -227,8 +247,85 @@ public class ManagerEntitiesImpl implements ManagerEntities {
      * @param name
      * @param author
      */
-    public Entity findEntity(String name, String author) {
-        throw new UnsupportedOperationException();
+    public Entity findEntity(String name, String author) throws EntityException{
+        Connection con = null;
+        PreparedStatement st = null;
+        try {
+            con = dataSource.getConnection();
+
+            //SQL operation for BOOKS
+            st = con.prepareStatement("select * from entities natural join books WHERE name = ? AND author = ?");
+            st.setString(1, name);
+            st.setString(2, author);
+            ResultSet rs = st.executeQuery();
+
+            while (rs.next()) {
+                long id = rs.getLong("id");
+                String nameTmp = rs.getString("name");
+                String authorTmp = rs.getString("author");
+                Date releaseYear = rs.getDate("releaseYear");
+                String position = rs.getString("position");
+                GenreEnum genre = null;
+                if(rs.getString("genre") != null)
+                    genre = GenreEnum.valueOf(rs.getString("genre"));
+                int pageCount = rs.getInt("pageCount");
+
+                Book tmp = new Book(nameTmp, releaseYear, authorTmp, position, genre, pageCount);
+                tmp.setId(id);
+                return tmp;
+            }
+
+            //SQL operation for DISKS
+            st = con.prepareStatement("select * from entities natural join disks WHERE name = ? AND author = ?");
+            st.setString(1, name);
+            st.setString(2, author);
+            rs = st.executeQuery();
+
+            while (rs.next()) {
+                long id = rs.getLong("id");
+                String nameTmp = rs.getString("name");
+                String authorTmp = rs.getString("author");
+                Date releaseYear = rs.getDate("releaseYear");
+                String position = rs.getString("position");
+
+                GenreEnum genre = null;
+                if(rs.getString("genre") != null)
+                    genre = GenreEnum.valueOf(rs.getString("genre"));
+
+                KindEnum kind = null;
+                if(rs.getString("kind") != null)
+                    kind = KindEnum.valueOf(rs.getString("kind"));
+
+                TypeEnum type = null;
+                if(rs.getString("type") != null)
+                    type = TypeEnum.valueOf(rs.getString("type"));
+
+                Disk tmp = new Disk(nameTmp, releaseYear, authorTmp, position, genre, kind, type);
+                tmp.setId(id);
+                return  tmp;
+            }
+
+            return null;
+
+        } catch (SQLException e) {
+            log.error("cannot select entities", e);
+            throw new EntityException("database select failed", e);
+        } finally {
+            if (st != null) {
+                try {
+                    st.close();
+                } catch (SQLException e) {
+                    log.error("cannot close statement", e);
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    log.error("cannot close connection", e);
+                }
+            }
+        }
     }
 
 

@@ -18,7 +18,7 @@ public interface ManagerEntities {
 
     Entity findEntity(long id);
 
-    Entity findEntity(String name, String author);
+    Entity findEntity(String name, String author) throws EntityException;
 
     List<Entity> getEntitiesList() throws EntityException;
 

@@ -80,4 +80,27 @@ public abstract class Entity {
     }
 
     //endregion
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Entity entity = (Entity) o;
+
+        if (!author.equals(entity.author)) return false;
+        if (!name.equals(entity.name)) return false;
+        if (releaseYear != null ? !releaseYear.equals(entity.releaseYear) : entity.releaseYear != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name.hashCode();
+        result = 31 * result + (releaseYear != null ? releaseYear.hashCode() : 0);
+        result = 31 * result + author.hashCode();
+        return result;
+    }
 }
