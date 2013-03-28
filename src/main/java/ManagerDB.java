@@ -2,6 +2,7 @@ import org.apache.derby.drda.NetworkServerControl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.sql.DataSource;
 import java.net.InetAddress;
 import java.sql.*;
 
@@ -48,11 +49,11 @@ public class ManagerDB {
         try {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
         } catch (InstantiationException e) {
-            e.printStackTrace();
+           log.error("EmbeddedDriver not found", e);
         } catch (IllegalAccessException e) {
-            e.printStackTrace();
+            log.error("EmbeddedDriver not found 2", e);
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            log.error("EmbeddedDriver not found 3", e);
         }
 
         Connection conn = null;
@@ -62,24 +63,30 @@ public class ManagerDB {
         try {
             conn = DriverManager.getConnection("jdbc:derby://localhost:1527/EvidencyDB;user=admin;password=password;create=true");
 
-           /* stmt = conn.createStatement();
+            stmt = conn.createStatement();
             try
             {
-                stmt.execute("CREATE TABLE entities(id int primary key, name varchar(20))");
+                stmt.execute("CREATE TABLE entities (id INT NOT NULL GENERATED ALWAYS AS IDENTITY CONSTRAINT entities_pk PRIMARY KEY, name VARCHAR(64), author VARCHAR(32), releaseYear DATE, position VARCHAR(128), genre VARCHAR(32) CONSTRAINT genre_fk REFERENCES genres)");
+                stmt.execute("CREATE TABLE genres (genre VARCHAR(32) NOT NULL CONSTRAINT genres_pk PRIMARY KEY )");
+                stmt.execute("CREATE TABLE books (id INT CONSTRAINT entities_id REFERENCES entities, pageCount INT)");
+                stmt.execute("CREATE TABLE disks (id INT CONSTRAINT disk_id_fk REFERENCES entities, kind VARCHAR(32) CONSTRAINT kind_ck CHECK (kind IN ('cd', 'dvd', 'blue-ray')), type VARCHAR(32) CONSTRAINT type_ck CHECK (type IN ('film', 'series', 'data', 'music', 'game')))");
             }
             catch (Exception e) {
-                //e.printStackTrace();
+                log.error("Cannot create table", e);
             }
 
             try
             {
-                stmt.execute("INSERT INTO newTestTable VALUES(10, 'Hey,'), (20, 'Look I changed'), (30, 'The code!')");
+                stmt.execute("INSERT INTO genres (genre) VALUES ('COMEDY')");
+                stmt.execute("INSERT INTO genres (genre) VALUES ('THRILLER')");
+                stmt.execute("INSERT INTO genres (genre) VALUES ('DRAMA')");
+                stmt.execute("INSERT INTO genres (genre) VALUES ('POETRY')");
             }
             catch (Exception e) {
-
+                log.error("Cannot insert values", e);
             }
 
-            prestat.close();     */
+            prestat.close();
             conn.close();
 
             return true;
@@ -88,7 +95,7 @@ public class ManagerDB {
             log.error("Cannot create database",e);
             return false;
         } catch (Exception e) {
-            log.error("Cannot create database",e);
+            log.error("Cannot create database 2",e);
             return false;
         }
         finally{

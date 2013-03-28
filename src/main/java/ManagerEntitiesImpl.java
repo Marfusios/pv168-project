@@ -104,10 +104,14 @@ public class ManagerEntitiesImpl implements ManagerEntities {
             con = dataSource.getConnection();
             //začátek SQL operace
             if(entity instanceof Book)
-                st = con.prepareStatement("DELETE FROM entity JOIN books WHERE id =?");
+                st = con.prepareStatement("DELETE FROM books WHERE id =?");
             if(entity instanceof Disk)
-                st=con.prepareStatement("DELETE FROM entity JOIN disks WHERE id=?");
-            st.setLong(2, entity.getId());
+                st=con.prepareStatement("DELETE FROM disks WHERE id=?");
+            st.setLong(1, entity.getId());
+            st.executeUpdate();
+
+            st = con.prepareStatement("DELETE FROM entities WHERE id=?");
+            st.setLong(1, entity.getId());
             st.executeUpdate();
 
         } catch (SQLException e) {

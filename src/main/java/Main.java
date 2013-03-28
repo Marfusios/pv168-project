@@ -8,12 +8,14 @@
 
 import org.apache.derby.jdbc.ClientDataSource;
 
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) throws EntityException {
 
-        ManagerDB.startServer();
-        ManagerDB.createDatabase();
+        //ManagerDB.startServer();
+        //ManagerDB.createDatabase();
 
         ClientDataSource ds = new ClientDataSource();
         ds.setServerName("localhost");
@@ -22,10 +24,12 @@ public class Main {
         ds.setUser("admin");
         ds.setPassword("password");
 
+
+
         ManagerEntities entitiesManager = new ManagerEntitiesImpl(ds);
 
-        //List<Entity> tmp = entitiesManager.getEntitiesList();
+        List<Entity> tmp = entitiesManager.getEntitiesList();
 
-        ManagerDB.closeServer();
+        //ManagerDB.closeServer();
     }
 }
