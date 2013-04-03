@@ -10,7 +10,7 @@ import java.util.List;
  */
 public interface ManagerEntities {
 
-    void addEntity(Entity entity) throws EntityException;
+    void addEntity(Entity entity) throws EntityException,NullPointerException,IllegalArgumentException;
 
     void removeEntity(Entity entity) throws EntityException;
 

@@ -68,20 +68,20 @@ public class ManagerEntitiesImplTest {
          fail("Entity disk with empty arguments was added to manager");
         }catch (IllegalArgumentException ex){}
 
-        disk = new Disk("","Pedro");
+        disk = new Disk("","BPM");
         try{
             manager.addEntity(disk);
             fail("Entity disk with empty  first argument was added to manager");
         }catch (IllegalArgumentException ex){}
 
-        disk = new Disk("top 10","");
+        disk = new Disk("Horizonty","");
         try{
             manager.addEntity(disk);
             fail("Entity disk with empty second argument was added to manager");
         }catch (IllegalArgumentException ex){}
 
 
-        disk = new Disk("top 10","Pedro");
+        disk = new Disk("Horizonty","BPM");
         manager.addEntity(disk);
         assertNotNull("Added entity don´t create ID",disk.getId());
         Entity result = manager.findEntity(disk.getId());
@@ -94,7 +94,7 @@ public class ManagerEntitiesImplTest {
     @Test
     public void testFindEntityWithID(){
         try{
-        Disk disk = new Disk("the best","Lolita");
+        Disk disk = new Disk("The Colour of Magic","Terry Pratchett");
         manager.addEntity(disk);
         long id=disk.getId();
         assertEquals("Found entity is not same with added entity",disk,manager.findEntity(id));
@@ -108,13 +108,13 @@ public class ManagerEntitiesImplTest {
     public void testFindEntityWithNameAndAuthor(){
         try
         {
-        Disk disk = new Disk("the best","Lolita");
+        Disk disk = new Disk("The Colour of Magic","Terry Pratchett");
         try{
             manager.addEntity(disk);
         }catch(EntityException ex ) {}
-        assertEquals("Found entity is not same with added entity",disk,manager.findEntity("the best","Lolita"));
-        assertNotSame("Found entity with wrong name is same with added entity",disk,manager.findEntity("best the","Lolita"));
-        assertNotSame("Found entity with wrong author is same with added entity",disk,manager.findEntity("the best","Orange"));
+        assertEquals("Found entity is not same with added entity",disk,manager.findEntity("The Colour of Magic","Terry Pratchett"));
+        assertNotSame("Found entity with wrong name is same with added entity",disk,manager.findEntity("best the","Terry Pratchett"));
+        assertNotSame("Found entity with wrong author is same with added entity",disk,manager.findEntity("The Colour of Magic","Orange"));
         }
         catch (EntityException ex) {fail();}
 

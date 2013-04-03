@@ -34,11 +34,12 @@ public class ManagerEntitiesImpl implements ManagerEntities {
     //region METHODS
 
     /**
-	 * 
-	 * @param entity
-	 */
-	public void addEntity(Entity entity) throws EntityException {
+	 *
+     * @param entity
+     */
+	public void addEntity(Entity entity) throws EntityException,NullPointerException,IllegalArgumentException {
         if(entity == null) throw new NullPointerException("entity");
+        if(entity.getName().isEmpty() || entity.getAuthor().isEmpty()) throw new IllegalArgumentException("entity");
 
         Connection con = null;
         PreparedStatement st = null;
@@ -198,7 +199,7 @@ public class ManagerEntitiesImpl implements ManagerEntities {
             if(newEntity instanceof Book){
                 Book book=(Book)newEntity;
                 if(oldEntity instanceof Book){
-                    st = con.prepareStatement("update books set pageCount=? values (?) where id=?") ;
+                    st = con.prepareStatement("update books set pageCount=? where id=?") ;
                     st.setInt(1,book.getPageCount());
                     st.setLong(2,oldEntity.getId());
                 }else{
@@ -214,7 +215,7 @@ public class ManagerEntitiesImpl implements ManagerEntities {
             if(newEntity instanceof Disk){
                 Disk disk=(Disk)newEntity;
                 if(oldEntity instanceof Disk){
-                    st = con.prepareStatement("update disks set kind=?, type=? values (?,?) where id=?") ;
+                    st = con.prepareStatement("update disks set kind=?, type=?  where id=?") ;
                     if(disk.getKind() != null)
                         st.setString(1,disk.getKind().toString());
                     else
@@ -274,7 +275,7 @@ public class ManagerEntitiesImpl implements ManagerEntities {
             con = dataSource.getConnection();
 
             //SQL operation for BOOKS
-            st = con.prepareStatement("select * from entities, books WHERE entities.id = books.id AND id=?");
+            st = con.prepareStatement("select * from entities, books WHERE entities.id = books.id AND entities.id=?");
             st.setLong(1, id);
             ResultSet rs = st.executeQuery();
 
@@ -298,7 +299,7 @@ public class ManagerEntitiesImpl implements ManagerEntities {
             }
 
             //SQL operation for DISKS
-            st = con.prepareStatement("select * from entities, disks WHERE entities.id = disks.id AND id=?");
+            st = con.prepareStatement("select * from entities, disks WHERE entities.id = disks.id AND entities.id=?");
             st.setLong(1, id);
             rs = st.executeQuery();
 
