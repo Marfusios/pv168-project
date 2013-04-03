@@ -76,7 +76,11 @@ public class ManagerDB {
 
                 stmt.execute("CREATE TABLE books (id INT CONSTRAINT entities_id REFERENCES entities, pageCount INT)");
                 ManagerDB.log.info("Created table: books");
-                stmt.execute("CREATE TABLE disks (id INT CONSTRAINT disk_id_fk REFERENCES entities, kind VARCHAR(32) CONSTRAINT kind_ck CHECK (kind IN ('cd', 'dvd', 'blue-ray')), type VARCHAR(32) CONSTRAINT type_ck CHECK (type IN ('film', 'series', 'data', 'music', 'game')))");
+
+                /*stmt.execute("DROP TABLE disks");
+                ManagerDB.log.info("Deleted table: disks"); */
+
+                stmt.execute("CREATE TABLE disks (id INT CONSTRAINT disk_id_fk REFERENCES entities, kind VARCHAR(32) CONSTRAINT kind_ck CHECK (kind IN ('CD', 'DVD', 'BLUE-RAY')), type VARCHAR(32) CONSTRAINT type_ck CHECK (type IN ('FILM', 'SERIES', 'DATA', 'MUSIC', 'GAME')))");
                 ManagerDB.log.info("Created table: disks");
             }
             catch (Exception e) {

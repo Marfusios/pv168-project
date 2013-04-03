@@ -2,8 +2,12 @@ import org.apache.derby.jdbc.ClientDataSource;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 
 import static org.junit.Assert.*;
 
@@ -17,18 +21,34 @@ import static org.junit.Assert.*;
 public class ManagerEntitiesImplTest {
 
     ManagerEntitiesImpl manager;
+    Properties prop = new Properties();
+    ClientDataSource ds = new ClientDataSource();
+
 
     @Before
     public void setUp() {
 
         ManagerDB.startServer();
 
-        ClientDataSource ds = new ClientDataSource();
-        ds.setServerName("localhost");
-        ds.setPortNumber(1527);
-        ds.setDatabaseName("EvidencyDBEmbedded");
-        ds.setUser("root");
-        ds.setPassword("password");
+        try
+        {
+            //region DATASOURCE
+            prop.load(new FileInputStream("src/config.properties"));
+            ds.setServerName(prop.getProperty("serverName"));
+            ds.setPortNumber(Integer.parseInt(prop.getProperty("port")));
+            ds.setDatabaseName(prop.getProperty("databaseName"));
+            ds.setUser(prop.getProperty("user"));
+            ds.setPassword(prop.getProperty("password"));
+            //endregion
+        }
+        catch(FileNotFoundException fex)
+        {
+            fail("Properties file not found");
+        }
+        catch (IOException ioex)
+        {
+            fail("IOException properties file");
+        }
 
         manager = new ManagerEntitiesImpl(ds);
     }
@@ -42,7 +62,7 @@ public class ManagerEntitiesImplTest {
              fail("Manager added null object");
          }catch(NullPointerException ex){}
 
-        /*Disk disk = new Disk("","");
+        Disk disk = new Disk("","");
         try{
          manager.addEntity(disk);
          fail("Entity disk with empty arguments was added to manager");
@@ -60,12 +80,12 @@ public class ManagerEntitiesImplTest {
             fail("Entity disk with empty second argument was added to manager");
         }catch (IllegalArgumentException ex){}
 
-        */
-        Disk disk = new Disk("top 10","Pedro");
+
+        disk = new Disk("top 10","Pedro");
         manager.addEntity(disk);
         assertNotNull("Added entity don´t create ID",disk.getId());
-        //Entity result = manager.findEntity(disk.getId());
-        //assertNotNull("Added entities not found",result);
+        Entity result = manager.findEntity(disk.getId());
+        assertNotNull("Added entities not found",result);
 
       }catch (EntityException ex){fail();}
     }
@@ -155,7 +175,7 @@ public class ManagerEntitiesImplTest {
 
             assertFalse("Entity list is empty. Method addEntity does not work correctly.", tmpList.isEmpty());
             assertTrue("In the list is more than one element.",tmpList.size() == 1);
-            //assertEquals("The book from list is not equal tmpBook",tmpBook, tmpList.get(0));
+            assertEquals("The book from list is not equal tmpBook",tmpBook, tmpList.get(0));
         }
         catch (EntityException enEx)
         {

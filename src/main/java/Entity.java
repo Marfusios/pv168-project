@@ -106,6 +106,9 @@ public abstract class Entity {
 
     @Override
     public String toString() {
-        return getId() + " " + getName() + " " + getAuthor() + " " + getReleaseYear();
+        String tmp = getId() + " | " + getName() + " | " + getAuthor() + " | " + getReleaseYear() + " | " + getPosition();
+        if(getGenre() != null)
+            return  tmp + " | " + getGenre().toString();
+        return tmp + " | null";
     }
 }

@@ -16,15 +16,15 @@ public interface ManagerEntities {
 
     void editEntity(Entity oldEntity, Entity newEntity) throws  EntityException;
 
-    Entity findEntity(long id);
+    Entity findEntity(long id) throws EntityException;
 
     Entity findEntity(String name, String author) throws EntityException;
 
     List<Entity> getEntitiesList() throws EntityException;
 
-    List<Entity> getEntitiesList(Date releaseYear);
+    List<Entity> getEntitiesList(Date releaseYear) throws EntityException;
 
-    List<Entity> getEntitiesList(GenreEnum genre);
+    List<Entity> getEntitiesList(GenreEnum genre) throws EntityException;
 
-    List<Entity> getEntitiesList(String author);
+    List<Entity> getEntitiesList(String author) throws EntityException;
 }
