@@ -36,4 +36,17 @@ public class Book extends Entity {
 
     //endregion
 
+    @Override
+    public boolean equals(Object o) {
+        if(!(o instanceof Book))
+            return false;
+        if (this == o) return true;
+        Book book= (Book) o;
+        return(super.equals(o) && pageCount==book.getPageCount());
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 }

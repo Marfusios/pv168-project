@@ -194,7 +194,7 @@ public class ManagerEntitiesImpl implements ManagerEntities {
             st.setLong(6,oldEntity.getId());
             int n = st.executeUpdate();
             if(n!=1) {
-                throw new EntityException("The entity with id was not updated "+oldEntity.getId(),null);
+                throw new EntityException("The entity with id "+oldEntity.getId()+ " was not updated ",null);
             }
             if(newEntity instanceof Book){
                 Book book=(Book)newEntity;
@@ -202,14 +202,22 @@ public class ManagerEntitiesImpl implements ManagerEntities {
                     st = con.prepareStatement("update books set pageCount=? where id=?") ;
                     st.setInt(1,book.getPageCount());
                     st.setLong(2,oldEntity.getId());
+                    st.executeUpdate();
                 }else{
                     st = con.prepareStatement("insert into books (id,pageCount) values (?,?)",PreparedStatement.NO_GENERATED_KEYS);
                     st.setLong(1,oldEntity.getId());
                     st.setInt(2,book.getPageCount());
+                    st.executeUpdate();
+                    if(n!=1)
+                        throw new EntityException("The book with id "+oldEntity.getId()+ " was not updated ",null);
+
+                    st = con.prepareStatement("delete from disks where id=?");
+                    st.setLong(1, oldEntity.getId());
+                    st.executeUpdate();
+
                 }
-                st.executeUpdate();
                 if(n!=1) {
-                    throw new EntityException("The entity with id was not updated "+oldEntity.getId(),null);
+                    throw new EntityException("The book with id "+oldEntity.getId()+ " was not updated ",null);
                 }
             }
             if(newEntity instanceof Disk){
@@ -236,10 +244,17 @@ public class ManagerEntitiesImpl implements ManagerEntities {
                         st.setString(3,disk.getType().toString());
                     else
                         st.setString(3, null);
+                    n = st.executeUpdate();
+                    if(n!=1)
+                    throw new EntityException("The disk with id "+oldEntity.getId()+ " was not updated ",null);
+
+                    st = con.prepareStatement("delete from books where id=?");
+                    st.setLong(1, oldEntity.getId());
+
                 }
-                st.executeUpdate();
+                n = st.executeUpdate();
                 if(n!=1) {
-                    throw new EntityException("not updated entity with id "+oldEntity.getId(),null);
+                    throw new EntityException("The disk with id "+oldEntity.getId()+ " was not updated ",null);
                 }
             }
         } catch (SQLException e) {

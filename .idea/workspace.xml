@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a574ad62-a16a-400f-a34f-dd3e2baa70b0" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Studium\pv168\pv168-project\pv168-project\EvidencyDBEmbedded\seg0\d4b0.dat" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c400.dat" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c400.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c420.dat" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c420.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c431.dat" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c431.dat" />
@@ -17,22 +16,22 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/log/log.ctrl" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/log/log.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/log/log1.dat" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/log/log1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ManagerEntities.java" afterPath="$PROJECT_DIR$/src/main/java/ManagerEntities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Book.java" afterPath="$PROJECT_DIR$/src/main/java/Book.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Disk.java" afterPath="$PROJECT_DIR$/src/main/java/Disk.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/db.lck" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/db.lck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pv168-project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365011772416" ignored="false" />
+    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365063972691" ignored="false" />
     <file path="/Main.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365011330546" ignored="false" />
     <file path="/ManagerEntities.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365012859262" ignored="false" />
     <file path="/Entita.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201079247" ignored="false" />
-    <file path="/ManagerEntitiesImpl.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365012847761" ignored="false" />
-    <file path="/Disk.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364411004659" ignored="false" />
-    <file path="/Book.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1364410984091" ignored="false" />
+    <file path="/ManagerEntitiesImpl.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365065725300" ignored="false" />
+    <file path="/Disk.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365066223234" ignored="false" />
+    <file path="/Book.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365066232587" ignored="false" />
     <file path="/fragment.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365010764070" ignored="false" />
     <file path="/ManagerEntitiesImplTest.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365005787602" ignored="false" />
     <file path="/Entity.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365009176036" ignored="false" />
@@ -93,8 +92,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -112,10 +111,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="26" column="12" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,7 +128,7 @@
       <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="46" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0">
+            <state line="86" column="8" selection-start="1632" selection-end="1659" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -141,32 +137,52 @@
       <file leaf-file-name="ManagerEntitiesImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="301" column="111" selection-start="11130" selection-end="11130" vertical-scroll-proportion="0.0">
+            <state line="256" column="109" selection-start="9688" selection-end="9688" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1365013162629" expanded="true" signature="1326:1406" placeholder="insert into ..." />
-                <marker date="1365013162629" expanded="true" signature="2345:2390" placeholder="insert into ..." />
-                <marker date="1365013162629" expanded="true" signature="2732:2779" placeholder="insert into ..." />
-                <marker date="1365013162629" expanded="true" signature="4340:4369" placeholder="DELETE FROM ..." />
-                <marker date="1365013162629" expanded="true" signature="4453:4481" placeholder="DELETE FROM ..." />
-                <marker date="1365013162629" expanded="true" signature="4600:4631" placeholder="DELETE FROM ..." />
-                <marker date="1365013162629" expanded="true" signature="5835:5918" placeholder="update entit..." />
-                <marker date="1365013162629" expanded="true" signature="6932:6971" placeholder="update books..." />
-                <marker date="1365013162629" expanded="true" signature="7153:7198" placeholder="insert into ..." />
-                <marker date="1365013162629" expanded="true" signature="7747:7790" placeholder="update disks..." />
-                <marker date="1365013162629" expanded="true" signature="8290:8337" placeholder="insert into ..." />
-                <marker date="1365013162629" expanded="true" signature="9939:10015" placeholder="select * fro..entities..." />
-                <marker date="1365013162629" expanded="true" signature="11058:11134" placeholder="select * fro..entities..." />
-                <marker date="1365013162629" expanded="true" signature="13412:13498" placeholder="select * fro..entities..." />
-                <marker date="1365013162629" expanded="true" signature="14575:14661" placeholder="select * fro..entities..." />
-                <marker date="1365013162629" expanded="true" signature="16962:17020" placeholder="SELECT * FRO..entities..." />
-                <marker date="1365013162629" expanded="true" signature="18020:18078" placeholder="select * fro..entities..." />
-                <marker date="1365013162629" expanded="true" signature="20365:20441" placeholder="SELECT * FRO..entities..." />
-                <marker date="1365013162629" expanded="true" signature="21301:21377" placeholder="select * fro..entities..." />
-                <marker date="1365013162629" expanded="true" signature="23501:23571" placeholder="SELECT * FRO..entities..." />
-                <marker date="1365013162629" expanded="true" signature="24623:24693" placeholder="select * fro..entities..." />
-                <marker date="1365013162629" expanded="true" signature="27036:27107" placeholder="SELECT * FRO..entities..." />
-                <marker date="1365013162629" expanded="true" signature="28149:28220" placeholder="select * fro..entities..." />
+                <marker date="1365066138108" expanded="true" signature="1326:1406" placeholder="insert into ..." />
+                <marker date="1365066138108" expanded="true" signature="2345:2390" placeholder="insert into ..." />
+                <marker date="1365066138108" expanded="true" signature="2732:2779" placeholder="insert into ..." />
+                <marker date="1365066138108" expanded="true" signature="4340:4369" placeholder="DELETE FROM ..." />
+                <marker date="1365066138108" expanded="true" signature="4453:4481" placeholder="DELETE FROM ..." />
+                <marker date="1365066138108" expanded="true" signature="4600:4631" placeholder="DELETE FROM ..." />
+                <marker date="1365066138108" expanded="true" signature="5835:5918" placeholder="update entit..." />
+                <marker date="1365066138108" expanded="true" signature="6937:6976" placeholder="update books..." />
+                <marker date="1365066138108" expanded="true" signature="7198:7243" placeholder="insert into ..." />
+                <marker date="1365066138108" expanded="true" signature="7623:7651" placeholder="delete from ..." />
+                <marker date="1365066138108" expanded="true" signature="8119:8162" placeholder="update disks..." />
+                <marker date="1365066138108" expanded="true" signature="8662:8709" placeholder="insert into ..." />
+                <marker date="1365066138108" expanded="true" signature="9407:9435" placeholder="delete from ..." />
+                <marker date="1365066138108" expanded="true" signature="10646:10722" placeholder="select * fro..entities..." />
+                <marker date="1365066138108" expanded="true" signature="11765:11841" placeholder="select * fro..entities..." />
+                <marker date="1365066138108" expanded="true" signature="14119:14205" placeholder="select * fro..entities..." />
+                <marker date="1365066138108" expanded="true" signature="15282:15368" placeholder="select * fro..entities..." />
+                <marker date="1365066138108" expanded="true" signature="17669:17727" placeholder="SELECT * FRO..entities..." />
+                <marker date="1365066138108" expanded="true" signature="18727:18785" placeholder="select * fro..entities..." />
+                <marker date="1365066138108" expanded="true" signature="21072:21148" placeholder="SELECT * FRO..entities..." />
+                <marker date="1365066138108" expanded="true" signature="22008:22084" placeholder="select * fro..entities..." />
+                <marker date="1365066138108" expanded="true" signature="24208:24278" placeholder="SELECT * FRO..entities..." />
+                <marker date="1365066138108" expanded="true" signature="25330:25400" placeholder="select * fro..entities..." />
+                <marker date="1365066138108" expanded="true" signature="27743:27814" placeholder="SELECT * FRO..entities..." />
+                <marker date="1365066138108" expanded="true" signature="28856:28927" placeholder="select * fro..entities..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Book.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="14" selection-start="1005" selection-end="1005" vertical-scroll-proportion="1.2605753">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Disk.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Disk.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="13" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,10 +196,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManagerEntitiesImplTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ManagerEntitiesImplTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="12" selection-start="730" selection-end="730" vertical-scroll-proportion="0.6615905">
+            <state line="34" column="12" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenreEnum.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GenreEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="39" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KindEnum.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/KindEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="12" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -212,8 +246,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Entita.java" />
         <option value="db-console:/708b1eb9/06838acb-1398-4011-b5aa-45a483693d13/" />
         <option value="$PROJECT_DIR$/src/main/java/EntityException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Disk.java" />
         <option value="db-console:/c6b3f7cd/06838acb-1398-4011-b5aa-45a483693d13/" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README" />
@@ -222,8 +254,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ManagerDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/ManagerEntities.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Disk.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Book.java" />
       </list>
     </option>
   </component>
@@ -711,7 +745,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -790,6 +823,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -812,9 +846,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -1049,8 +1083,32 @@
       <created>1364504287603</created>
       <updated>1364504287603</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="oprawiono AddEntity, Lolitka zrusono ;) , doladzone SQL prikazy">
+      <created>1365013587760</created>
+      <updated>1365013587760</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1068,13 +1126,13 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32414553" sideWeight="0.42102456" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24332978" sideWeight="0.6802646" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31973538" sideWeight="0.48292422" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31973538" sideWeight="0.48292422" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32801822" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1121,7 +1179,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented embedded database. FINALLY!" />
+    <option name="LAST_COMMIT_MESSAGE" value="oprawiono AddEntity, Lolitka zrusono ;) , doladzone SQL prikazy" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1142,6 +1200,7 @@
     <MESSAGE value="Correcting" />
     <MESSAGE value="Correcting. Implemented find method" />
     <MESSAGE value="Implemented embedded database. FINALLY!" />
+    <MESSAGE value="oprawiono AddEntity, Lolitka zrusono ;) , doladzone SQL prikazy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1151,21 +1210,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/junit/framework/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.03074141" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GenreEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="39" selection-start="57" selection-end="57" vertical-scroll-proportion="0.03908046" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.21494253" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TypeEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1193,20 +1237,6 @@
         <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Disk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0816092">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="46" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ManagerDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="69" selection-start="2783" selection-end="2783" vertical-scroll-proportion="0.0">
@@ -1216,18 +1246,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="24" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="12" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GenreEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="39" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KindEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="12" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="12" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1238,40 +1284,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="8" selection-start="1632" selection-end="1659" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ManagerEntitiesImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="111" selection-start="11130" selection-end="11130" vertical-scroll-proportion="0.0">
+        <state line="256" column="109" selection-start="9688" selection-end="9688" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1365013162629" expanded="true" signature="1326:1406" placeholder="insert into ..." />
-            <marker date="1365013162629" expanded="true" signature="2345:2390" placeholder="insert into ..." />
-            <marker date="1365013162629" expanded="true" signature="2732:2779" placeholder="insert into ..." />
-            <marker date="1365013162629" expanded="true" signature="4340:4369" placeholder="DELETE FROM ..." />
-            <marker date="1365013162629" expanded="true" signature="4453:4481" placeholder="DELETE FROM ..." />
-            <marker date="1365013162629" expanded="true" signature="4600:4631" placeholder="DELETE FROM ..." />
-            <marker date="1365013162629" expanded="true" signature="5835:5918" placeholder="update entit..." />
-            <marker date="1365013162629" expanded="true" signature="6932:6971" placeholder="update books..." />
-            <marker date="1365013162629" expanded="true" signature="7153:7198" placeholder="insert into ..." />
-            <marker date="1365013162629" expanded="true" signature="7747:7790" placeholder="update disks..." />
-            <marker date="1365013162629" expanded="true" signature="8290:8337" placeholder="insert into ..." />
-            <marker date="1365013162629" expanded="true" signature="9939:10015" placeholder="select * fro..entities..." />
-            <marker date="1365013162629" expanded="true" signature="11058:11134" placeholder="select * fro..entities..." />
-            <marker date="1365013162629" expanded="true" signature="13412:13498" placeholder="select * fro..entities..." />
-            <marker date="1365013162629" expanded="true" signature="14575:14661" placeholder="select * fro..entities..." />
-            <marker date="1365013162629" expanded="true" signature="16962:17020" placeholder="SELECT * FRO..entities..." />
-            <marker date="1365013162629" expanded="true" signature="18020:18078" placeholder="select * fro..entities..." />
-            <marker date="1365013162629" expanded="true" signature="20365:20441" placeholder="SELECT * FRO..entities..." />
-            <marker date="1365013162629" expanded="true" signature="21301:21377" placeholder="select * fro..entities..." />
-            <marker date="1365013162629" expanded="true" signature="23501:23571" placeholder="SELECT * FRO..entities..." />
-            <marker date="1365013162629" expanded="true" signature="24623:24693" placeholder="select * fro..entities..." />
-            <marker date="1365013162629" expanded="true" signature="27036:27107" placeholder="SELECT * FRO..entities..." />
-            <marker date="1365013162629" expanded="true" signature="28149:28220" placeholder="select * fro..entities..." />
+            <marker date="1365066138108" expanded="true" signature="1326:1406" placeholder="insert into ..." />
+            <marker date="1365066138108" expanded="true" signature="2345:2390" placeholder="insert into ..." />
+            <marker date="1365066138108" expanded="true" signature="2732:2779" placeholder="insert into ..." />
+            <marker date="1365066138108" expanded="true" signature="4340:4369" placeholder="DELETE FROM ..." />
+            <marker date="1365066138108" expanded="true" signature="4453:4481" placeholder="DELETE FROM ..." />
+            <marker date="1365066138108" expanded="true" signature="4600:4631" placeholder="DELETE FROM ..." />
+            <marker date="1365066138108" expanded="true" signature="5835:5918" placeholder="update entit..." />
+            <marker date="1365066138108" expanded="true" signature="6937:6976" placeholder="update books..." />
+            <marker date="1365066138108" expanded="true" signature="7198:7243" placeholder="insert into ..." />
+            <marker date="1365066138108" expanded="true" signature="7623:7651" placeholder="delete from ..." />
+            <marker date="1365066138108" expanded="true" signature="8119:8162" placeholder="update disks..." />
+            <marker date="1365066138108" expanded="true" signature="8662:8709" placeholder="insert into ..." />
+            <marker date="1365066138108" expanded="true" signature="9407:9435" placeholder="delete from ..." />
+            <marker date="1365066138108" expanded="true" signature="10646:10722" placeholder="select * fro..entities..." />
+            <marker date="1365066138108" expanded="true" signature="11765:11841" placeholder="select * fro..entities..." />
+            <marker date="1365066138108" expanded="true" signature="14119:14205" placeholder="select * fro..entities..." />
+            <marker date="1365066138108" expanded="true" signature="15282:15368" placeholder="select * fro..entities..." />
+            <marker date="1365066138108" expanded="true" signature="17669:17727" placeholder="SELECT * FRO..entities..." />
+            <marker date="1365066138108" expanded="true" signature="18727:18785" placeholder="select * fro..entities..." />
+            <marker date="1365066138108" expanded="true" signature="21072:21148" placeholder="SELECT * FRO..entities..." />
+            <marker date="1365066138108" expanded="true" signature="22008:22084" placeholder="select * fro..entities..." />
+            <marker date="1365066138108" expanded="true" signature="24208:24278" placeholder="SELECT * FRO..entities..." />
+            <marker date="1365066138108" expanded="true" signature="25330:25400" placeholder="select * fro..entities..." />
+            <marker date="1365066138108" expanded="true" signature="27743:27814" placeholder="SELECT * FRO..entities..." />
+            <marker date="1365066138108" expanded="true" signature="28856:28927" placeholder="select * fro..entities..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Disk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="12" selection-start="730" selection-end="730" vertical-scroll-proportion="0.6615905">
+        <state line="63" column="13" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="14" selection-start="1005" selection-end="1005" vertical-scroll-proportion="1.2605753">
           <folding />
         </state>
       </provider>

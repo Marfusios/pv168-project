@@ -1,11 +1,11 @@
-2013-04-03 18:22:26.404 GMT : Síťový server Apache Derby - 10.5.3.0 - (802917): spuštěn a připraven přijímat připojení na portu 1527 v {3} 
+2013-04-04 09:04:13.491 GMT : Síťový server Apache Derby - 10.5.3.0 - (802917): spuštěn a připraven přijímat připojení na portu 1527 v {3} 
 ----------------------------------------------------------------
-2013-04-03 18:22:26.600 GMT:
- Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance a816c00e-013d-d122-b7f1-00000314ffc8
+2013-04-04 09:04:13.684 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance a816c00e-013d-d44a-0439-00000314a068
 on database directory D:\Studium\pv168\pv168-project\pv168-project\EvidencyDBEmbedded  
 
 Database Class Loader started - derby.database.classpath=''
-2013-04-03 18:22:27.588 GMT : DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
+2013-04-04 09:04:14.572 GMT : DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
 An exception was thrown during network server startup. DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
 java.lang.reflect.InvocationTargetException
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -19,7 +19,7 @@ Caused by: java.lang.Exception: DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <12
 	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessage(Unknown Source)
 	at org.apache.derby.impl.drda.NetworkServerControlImpl.blockingStart(Unknown Source)
 	... 6 more
-2013-04-03 18:22:27.648 GMT : DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
+2013-04-04 09:04:14.651 GMT : DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
 An exception was thrown during network server startup. DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
 java.lang.reflect.InvocationTargetException
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -33,7 +33,7 @@ Caused by: java.lang.Exception: DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <12
 	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessage(Unknown Source)
 	at org.apache.derby.impl.drda.NetworkServerControlImpl.blockingStart(Unknown Source)
 	... 6 more
-2013-04-03 18:22:27.721 GMT : DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
+2013-04-04 09:04:14.743 GMT : DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
 An exception was thrown during network server startup. DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
 java.lang.reflect.InvocationTargetException
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -47,7 +47,7 @@ Caused by: java.lang.Exception: DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <12
 	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessage(Unknown Source)
 	at org.apache.derby.impl.drda.NetworkServerControlImpl.blockingStart(Unknown Source)
 	... 6 more
-2013-04-03 18:22:27.790 GMT : DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
+2013-04-04 09:04:14.859 GMT : DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
 An exception was thrown during network server startup. DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
 java.lang.reflect.InvocationTargetException
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -61,7 +61,7 @@ Caused by: java.lang.Exception: DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <12
 	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessage(Unknown Source)
 	at org.apache.derby.impl.drda.NetworkServerControlImpl.blockingStart(Unknown Source)
 	... 6 more
-2013-04-03 18:22:27.908 GMT : DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
+2013-04-04 09:04:14.948 GMT : DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
 An exception was thrown during network server startup. DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <127.0.0.1>, <java.net.BindException: Address already in use: JVM_Bind>
 java.lang.reflect.InvocationTargetException
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

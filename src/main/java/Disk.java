@@ -49,4 +49,18 @@ public class Disk extends Entity {
 	}
 
      //endregion
+
+    @Override
+    public boolean equals(Object o) {
+        if(!(o instanceof Disk))
+            return false;
+        if (this == o) return true;
+        Disk disk=(Disk) o;
+        return(super.equals(o) && kind==disk.getKind() && type==disk.getType());
+    }
+
+    @Override
+    public int hashCode() {
+       return super.hashCode();
+    }
 }
