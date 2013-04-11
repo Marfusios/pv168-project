@@ -10,21 +10,23 @@ package homeWork.threads;
 public class SimpleSynchronized implements Runnable
 {
     private static int counter = -1;
-    private final Object locker = new Object();
+    private static final Object locker = new Object();
 
     @Override
     public  void run() {
 
-        synchronized (locker)
-        {
-            while(++counter <= 50)
-            {
-                System.out.println(Thread.currentThread().getName() + " | " + counter);
-                for(long i = 0; i<100000000; i++)
-                {}
-            }
-        }
 
+        while(true)
+        {
+            synchronized (locker)
+            {
+                if(counter >= 50) return;
+                System.out.println(Thread.currentThread().getName() + " | " + ++counter);
+            }
+
+            for(long i = 0; i<100000; i++)
+            {}
+        }
     }
 
     public static void main(String[] args)

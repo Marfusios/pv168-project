@@ -12,19 +12,23 @@ import java.util.concurrent.locks.ReentrantLock;
 public class ReentLock implements Runnable
 {
     private static int counter = -1;
-    private ReentrantLock lock = new ReentrantLock();
+    private static final ReentrantLock lock = new ReentrantLock();
 
     @Override
     public void run() {
 
 
-        while(counter < 50)
+        while(true)
         {
             lock.lock();
+
+            if(counter >= 50) return;
             System.out.println(Thread.currentThread().getName() + " | " + ++counter);
+
             lock.unlock();
 
-            for(long i = 0; i<100000000; i++)
+
+            for(long i = 0; i<10000000; i++)
             {}
         }
 
