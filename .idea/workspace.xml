@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a574ad62-a16a-400f-a34f-dd3e2baa70b0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/homeWork/threads/AtomicInt.java" afterPath="$PROJECT_DIR$/src/main/java/homeWork/threads/AtomicInt.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/homeWork/threads/ReentLock.java" afterPath="$PROJECT_DIR$/src/main/java/homeWork/threads/ReentLock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/homeWork/threads/SimpleSynchronized.java" afterPath="$PROJECT_DIR$/src/main/java/homeWork/threads/SimpleSynchronized.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pv168-project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365673893663" ignored="false" />
+    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365677127498" ignored="false" />
     <file path="/Main.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365011330546" ignored="false" />
     <file path="/ManagerEntities.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365012859262" ignored="false" />
     <file path="/Entita.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201079247" ignored="false" />
@@ -26,7 +24,7 @@
     <file path="/mainThreads.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365633115491" ignored="false" />
     <file path="/MainThreads.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365630530696" ignored="false" />
     <file path="/AtomicInt.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365677063033" ignored="false" />
-    <file path="/ReentLock.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365676364839" ignored="false" />
+    <file path="/ReentLock.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365678000856" ignored="false" />
     <file path="/SimpleSynchronized.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365676098952" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +99,7 @@
       <file leaf-file-name="ReentLock.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/homeWork/threads/ReentLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="50" selection-start="564" selection-end="564" vertical-scroll-proportion="0.66021127">
+            <state line="33" column="29" selection-start="762" selection-end="763" vertical-scroll-proportion="0.87147886">
               <folding />
             </state>
           </provider>
@@ -110,7 +108,7 @@
       <file leaf-file-name="AtomicInt.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/homeWork/threads/AtomicInt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="33" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
+            <state line="16" column="99" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,7 +117,7 @@
       <file leaf-file-name="SimpleSynchronized.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/homeWork/threads/SimpleSynchronized.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="47" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
+            <state line="21" column="13" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -158,8 +156,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/homeWork/threads/MainThreads.java" />
         <option value="$PROJECT_DIR$/src/main/java/homeWork/threads/SimpleSynchronized.java" />
-        <option value="$PROJECT_DIR$/src/main/java/homeWork/threads/ReentLock.java" />
         <option value="$PROJECT_DIR$/src/main/java/homeWork/threads/AtomicInt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/homeWork/threads/ReentLock.java" />
       </list>
     </option>
   </component>
@@ -1047,7 +1045,11 @@
       <created>1365673594448</created>
       <updated>1365673594448</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Correct threads homework.">
+      <created>1365677135743</created>
+      <updated>1365677135743</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1092,8 +1094,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24301076" sideWeight="0.6810934" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3189066" sideWeight="0.48292422" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24301076" sideWeight="0.6810934" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3189066" sideWeight="0.48292422" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32801822" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1145,7 +1147,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct threads homework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct threads homework." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1169,6 +1171,7 @@
     <MESSAGE value="Implemented embedded database. FINALLY!" />
     <MESSAGE value="oprawiono AddEntity, Lolitka zrusono ;) , doladzone SQL prikazy" />
     <MESSAGE value="Correct threads homework" />
+    <MESSAGE value="Correct threads homework." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1269,21 +1272,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/homeWork/threads/AtomicInt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="33" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
+        <state line="16" column="99" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/homeWork/threads/SimpleSynchronized.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="47" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
+        <state line="21" column="13" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/homeWork/threads/ReentLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="50" selection-start="564" selection-end="564" vertical-scroll-proportion="0.66021127">
+        <state line="33" column="29" selection-start="762" selection-end="763" vertical-scroll-proportion="0.87147886">
           <folding />
         </state>
       </provider>

@@ -11,8 +11,8 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class ReentLock implements Runnable
 {
-    private static int counter = -1;
-    private static final ReentrantLock lock = new ReentrantLock();
+    private static volatile int counter = -1;
+    private static final ReentrantLock LOCK = new ReentrantLock();
 
     @Override
     public void run() {
@@ -20,13 +20,16 @@ public class ReentLock implements Runnable
 
         while(true)
         {
-            lock.lock();
+            try
+            {
+                LOCK.lock();
 
-            if(counter >= 50) return;
-            System.out.println(Thread.currentThread().getName() + " | " + ++counter);
-
-            lock.unlock();
-
+                if(counter >= 50) return;
+                System.out.println(Thread.currentThread().getName() + " | " + ++counter);
+            }
+            finally {
+                LOCK.unlock();
+            }
 
             for(long i = 0; i<10000000; i++)
             {}
