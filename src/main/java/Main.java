@@ -22,7 +22,7 @@ public class Main {
         try
         {
             ManagerDB.startServer();
-            ManagerDB.createDatabase();
+            //ManagerDB.createDatabase();
 
             //region DATASOURCE
             Properties prop = new Properties();
@@ -41,6 +41,7 @@ public class Main {
             /*DateFormat format = new SimpleDateFormat("EEE MMM dd yyyy", Locale.US);
             entitiesManager.addEntity(new Disk("Take The Crown", format.parse("Sat Feb 17 2012"), "Robbie Williams", "Doma v obyvaku", GenreEnum.COMEDY, KindEnum.CD, TypeEnum.MUSIC));   */
 
+
             System.out.println("\n");
             List<Entity> tmp = entitiesManager.getEntitiesList();
             System.out.print("ID | NAME | AUTHOR | RELEASE YEAR | POSITION | GENRE \n");
@@ -49,7 +50,9 @@ public class Main {
                 System.out.print(one.toString() + '\n');
             }
             System.out.println("\n");
+
         }
+
         catch(FileNotFoundException fex)
         {
             System.out.println("File not found " + fex.toString());

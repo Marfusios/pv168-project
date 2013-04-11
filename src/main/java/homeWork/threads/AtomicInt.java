@@ -18,14 +18,15 @@ public class AtomicInt implements Runnable
     @Override
     public void run() {
 
-        while(counter.get() <= 47)
+
+        while(counter.incrementAndGet() <= 50)
         {
             synchronized (locker)
             {
-                System.out.println(Thread.currentThread().getName() + " | " + counter.incrementAndGet());
-                for(long i = 0; i<100000000; i++)
-                {}
+                System.out.println(Thread.currentThread().getName() + " | " + counter);
             }
+
+            for(long i = 0; i<100000000; i++){}
         }
 
 

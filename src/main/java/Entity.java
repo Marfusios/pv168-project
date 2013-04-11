@@ -82,6 +82,7 @@ public abstract class Entity {
     //endregion
 
 
+    //region OVERRIDES
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -111,4 +112,6 @@ public abstract class Entity {
             return  tmp + " | " + getGenre().toString();
         return tmp + " | null";
     }
+
+    //endregion
 }

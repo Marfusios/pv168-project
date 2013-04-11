@@ -17,6 +17,7 @@ public class ManagerDB {
     final static Logger log = LoggerFactory.getLogger(ManagerEntitiesImpl.class);
     static NetworkServerControl server;
 
+
     public static boolean startServer()
     {
         try {
@@ -29,6 +30,7 @@ public class ManagerDB {
             return false;
         }
     }
+
 
     public static boolean closeServer()
     {
@@ -44,6 +46,7 @@ public class ManagerDB {
             return false;
         }
     }
+
 
     public static boolean createDatabase()
     {

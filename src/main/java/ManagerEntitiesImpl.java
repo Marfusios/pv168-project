@@ -663,12 +663,9 @@ public class ManagerEntitiesImpl implements ManagerEntities {
                 if(releaseYearTmp != null)
                     releaseYear = new Date(releaseYearTmp.getTime());
                 String position = rs.getString("position");
-                GenreEnum genreTmp = null;
-                if(rs.getString("genre") != null)
-                    genre = GenreEnum.valueOf(rs.getString("genre"));
                 int pageCount = rs.getInt("pageCount");
 
-                Book tmp = new Book(name, releaseYear, author, position, genreTmp, pageCount);
+                Book tmp = new Book(name, releaseYear, author, position, genre, pageCount);
                 tmp.setId(id);
                 entities.add(tmp);
             }
