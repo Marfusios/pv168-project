@@ -1,6 +1,7 @@
 import org.apache.derby.jdbc.ClientDataSource;
 import org.junit.Before;
 import org.junit.Test;
+import pv168.project.*;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -65,19 +66,19 @@ public class ManagerEntitiesImplTest {
         Disk disk = new Disk("","");
         try{
          manager.addEntity(disk);
-         fail("Entity disk with empty arguments was added to manager");
+         fail("pv168.project.Entity disk with empty arguments was added to manager");
         }catch (IllegalArgumentException ex){}
 
         disk = new Disk("","BPM");
         try{
             manager.addEntity(disk);
-            fail("Entity disk with empty  first argument was added to manager");
+            fail("pv168.project.Entity disk with empty  first argument was added to manager");
         }catch (IllegalArgumentException ex){}
 
         disk = new Disk("Horizonty","");
         try{
             manager.addEntity(disk);
-            fail("Entity disk with empty second argument was added to manager");
+            fail("pv168.project.Entity disk with empty second argument was added to manager");
         }catch (IllegalArgumentException ex){}
 
 
@@ -165,7 +166,7 @@ public class ManagerEntitiesImplTest {
             }
 
             tmpList = manager.getEntitiesList();
-            assertTrue("Entity list isn't empty. Method removeEntity does not work correctly.", tmpList.isEmpty());
+            assertTrue("pv168.project.Entity list isn't empty. Method removeEntity does not work correctly.", tmpList.isEmpty());
 
             Book tmpBook = new Book("The godfather","Mario Puzo");
             try{
@@ -173,7 +174,7 @@ public class ManagerEntitiesImplTest {
             }catch(EntityException ex ) {}
             tmpList = manager.getEntitiesList();
 
-            assertFalse("Entity list is empty. Method addEntity does not work correctly.", tmpList.isEmpty());
+            assertFalse("pv168.project.Entity list is empty. Method addEntity does not work correctly.", tmpList.isEmpty());
             assertTrue("In the list is more than one element.",tmpList.size() == 1);
             assertEquals("The book from list is not equal tmpBook",tmpBook, tmpList.get(0));
         }
@@ -205,7 +206,7 @@ public class ManagerEntitiesImplTest {
         found = manager.findEntity("C#", oldEntity.getAuthor());
         assertNotNull("Modified entity is not in the DB", found);
 
-        assertEquals("Entity was modified badly", found.getPosition(), "Position");
+        assertEquals("pv168.project.Entity was modified badly", found.getPosition(), "Position");
 
     }catch (EntityException e) {fail();}
   }

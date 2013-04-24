@@ -1,3 +1,5 @@
+package pv168.project;
+
 import java.util.Date;
 
 public class Book extends Entity {

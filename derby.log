@@ -1,8 +1,12 @@
-2013-04-10 21:31:09.989 GMT : Apache Derby Network Server - 10.5.3.0 - (802917) started and ready to accept connections on port 1527
+Wed Apr 24 15:34:53 CEST 2013 : Apache Derby Network Server - 10.8.1.2 - (1095077) started and ready to accept connections on port 1527
 ----------------------------------------------------------------
-2013-04-10 21:31:10.181 GMT:
- Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance a816c00e-013d-f5dc-04dd-000006749aa8
-on database directory C:\Users\m4r10\IdeaProjects\pv168-project\EvidencyDBEmbedded  
-
+Wed Apr 24 15:34:53 CEST 2013:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a816c00e-013e-3c41-013d-000006740c68 
+on database directory C:\Users\m4r10\IdeaProjects\pv168-project\EvidencyDBEmbedded  with class loader sun.misc.Launcher$AppClassLoader@6140c973 
+Loaded from file:/C:/Users/m4r10/.m2/repository/org/apache/derby/derby/10.8.1.2/derby-10.8.1.2.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_15-b03
+user.dir=C:\Users\m4r10\IdeaProjects\pv168-project
+derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
-2013-04-10 21:31:11.599 GMT : Apache Derby Network Server - 10.5.3.0 - (802917) shutdown
+Wed Apr 24 15:34:55 CEST 2013 : Apache Derby Network Server - 10.8.1.2 - (1095077) shutdown

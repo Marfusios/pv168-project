@@ -1,6 +1,9 @@
-import org.apache.derby.drda.NetworkServerControl;
+package pv168.project;
+
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.apache.derby.drda.*;
 
 import java.net.InetAddress;
 import java.sql.*;
@@ -78,7 +81,7 @@ public class ManagerDB {
                 ManagerDB.log.info("Created table: books");
 
                 /*stmt.execute("DROP TABLE disks");
-                ManagerDB.log.info("Deleted table: disks"); */
+                pv168.project.ManagerDB.log.info("Deleted table: disks"); */
 
                 stmt.execute("CREATE TABLE disks (id INT CONSTRAINT disk_id_fk REFERENCES entities, kind VARCHAR(32) CONSTRAINT kind_ck CHECK (kind IN ('CD', 'DVD', 'BLUE-RAY')), type VARCHAR(32) CONSTRAINT type_ck CHECK (type IN ('FILM', 'SERIES', 'DATA', 'MUSIC', 'GAME')))");
                 ManagerDB.log.info("Created table: disks");
