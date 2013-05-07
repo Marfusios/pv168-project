@@ -29,4 +29,8 @@ public interface ManagerEntities {
     List<Entity> getEntitiesList(GenreEnum genre) throws EntityException;
 
     List<Entity> getEntitiesList(String author) throws EntityException;
+
+    List<Entity> getBooksList() throws EntityException;
+
+    List<Entity> getDisksList() throws EntityException;
 }

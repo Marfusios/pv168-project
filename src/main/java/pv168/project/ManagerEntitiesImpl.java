@@ -493,85 +493,11 @@ public class ManagerEntitiesImpl implements ManagerEntities {
      * @throws EntityException
      */
 	public List<Entity> getEntitiesList() throws EntityException {
-        Connection con = null;
-        PreparedStatement st = null;
-        try {
-            List<Entity> entities = new ArrayList<>();
-            con = dataSource.getConnection();
-
-            //SQL operation for BOOKS
-            st = con.prepareStatement("SELECT * FROM entities, books WHERE entities.id = books.id");
-            ResultSet rs = st.executeQuery();
-            while (rs.next()) {
-                long id = rs.getLong("id");
-                String name = rs.getString("name");
-                String author = rs.getString("author");
-                java.sql.Date releaseYearTmp = rs.getDate("releaseYear");
-                java.util.Date releaseYear = null;
-                if(releaseYearTmp != null)
-                    releaseYear = new Date(releaseYearTmp.getTime());
-                String position = rs.getString("position");
-                GenreEnum genre = null;
-                if(rs.getString("genre") != null)
-                     genre = GenreEnum.valueOf(rs.getString("genre"));
-                int pageCount = rs.getInt("pageCount");
-
-                Book tmp = new Book(name, releaseYear, author, position, genre, pageCount);
-                tmp.setId(id);
-                entities.add(tmp);
-            }
-
-            //SQL operation for DISKS
-            st = con.prepareStatement("select * from entities, disks where entities.id = disks.id");
-            rs = st.executeQuery();
-            while (rs.next()) {
-                long id = rs.getLong("id");
-                String name = rs.getString("name");
-                String author = rs.getString("author");
-                java.sql.Date releaseYearTmp = rs.getDate("releaseYear");
-                java.util.Date releaseYear = null;
-                if(releaseYearTmp != null)
-                    releaseYear = new Date(releaseYearTmp.getTime());
-                String position = rs.getString("position");
-
-                GenreEnum genre = null;
-                if(rs.getString("genre") != null)
-                    genre = GenreEnum.valueOf(rs.getString("genre"));
-
-                KindEnum kind = null;
-                if(rs.getString("kind") != null)
-                    kind = KindEnum.valueOf(rs.getString("kind"));
-
-                TypeEnum type = null;
-                if(rs.getString("type") != null)
-                    type = TypeEnum.valueOf(rs.getString("type"));
-
-                Disk tmp = new Disk(name, releaseYear, author, position, genre, kind, type);
-                tmp.setId(id);
-                entities.add(tmp);
-            }
-
+            List<Entity> entities=new ArrayList<>();
+            entities.addAll(getBooksList());
+            entities.addAll(getDisksList());
             return entities;
 
-        } catch (SQLException e) {
-            log.error("cannot select entities", e);
-            throw new EntityException("database select failed", e);
-        } finally {
-            if (st != null) {
-                try {
-                    st.close();
-                } catch (SQLException e) {
-                    log.error("cannot close statement", e);
-                }
-            }
-            if (con != null) {
-                try {
-                    con.close();
-                } catch (SQLException e) {
-                    log.error("cannot close connection", e);
-                }
-            }
-        }
 	}
 
 
@@ -838,5 +764,116 @@ public class ManagerEntitiesImpl implements ManagerEntities {
         }
     }
 
+    @Override
+    public List<Entity> getBooksList() throws EntityException {
+        Connection con = null;
+        PreparedStatement st = null;
+        try {
+            List<Entity> books = new ArrayList<>();
+            con = dataSource.getConnection();
+
+            st = con.prepareStatement("SELECT * FROM entities, books WHERE entities.id = books.id");
+            ResultSet rs = st.executeQuery();
+            while (rs.next()) {
+                long id = rs.getLong("id");
+                String name = rs.getString("name");
+                String author = rs.getString("author");
+                java.sql.Date releaseYearTmp = rs.getDate("releaseYear");
+                java.util.Date releaseYear = null;
+                if(releaseYearTmp != null)
+                    releaseYear = new Date(releaseYearTmp.getTime());
+                String position = rs.getString("position");
+                GenreEnum genre = null;
+                if(rs.getString("genre") != null)
+                    genre = GenreEnum.valueOf(rs.getString("genre"));
+                int pageCount = rs.getInt("pageCount");
+
+                Book tmp = new Book(name, releaseYear, author, position, genre, pageCount);
+                tmp.setId(id);
+                books.add(tmp);
+            }
+
+            return books;
+
+        } catch (SQLException e) {
+            log.error("cannot select entities", e);
+            throw new EntityException("database select failed", e);
+        } finally {
+            if (st != null) {
+                try {
+                    st.close();
+                } catch (SQLException e) {
+                    log.error("cannot close statement", e);
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    log.error("cannot close connection", e);
+                }
+            }
+        }
+    }
+
+    @Override
+    public List<Entity> getDisksList() throws EntityException {
+        Connection con = null;
+        PreparedStatement st = null;
+        try {
+            List<Entity> disks = new ArrayList<>();
+            con = dataSource.getConnection();
+
+            st = con.prepareStatement("select * from entities, disks where entities.id = disks.id");
+            ResultSet rs = st.executeQuery();
+            while (rs.next()) {
+                long id = rs.getLong("id");
+                String name = rs.getString("name");
+                String author = rs.getString("author");
+                java.sql.Date releaseYearTmp = rs.getDate("releaseYear");
+                java.util.Date releaseYear = null;
+                if(releaseYearTmp != null)
+                    releaseYear = new Date(releaseYearTmp.getTime());
+                String position = rs.getString("position");
+
+                GenreEnum genre = null;
+                if(rs.getString("genre") != null)
+                    genre = GenreEnum.valueOf(rs.getString("genre"));
+
+                KindEnum kind = null;
+                if(rs.getString("kind") != null)
+                    kind = KindEnum.valueOf(rs.getString("kind"));
+
+                TypeEnum type = null;
+                if(rs.getString("type") != null)
+                    type = TypeEnum.valueOf(rs.getString("type"));
+
+                Disk tmp = new Disk(name, releaseYear, author, position, genre, kind, type);
+                tmp.setId(id);
+                disks.add(tmp);
+            }
+
+            return disks;
+
+        } catch (SQLException e) {
+            log.error("cannot select entities", e);
+            throw new EntityException("database select failed", e);
+        } finally {
+            if (st != null) {
+                try {
+                    st.close();
+                } catch (SQLException e) {
+                    log.error("cannot close statement", e);
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    log.error("cannot close connection", e);
+                }
+            }
+        }
+    }
     //endregion
 }
