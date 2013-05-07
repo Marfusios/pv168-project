@@ -1,9 +1,10 @@
 package pv168.project;
 
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.sql.DataSource;
+import org.apache.derby.jdbc.ClientDataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,16 +19,36 @@ public class ManagerEntitiesImpl implements ManagerEntities {
 
     //region PROPERTIES & FIELDS
     final static Logger log = LoggerFactory.getLogger(ManagerEntitiesImpl.class);
-    private final DataSource dataSource;
+    private final ClientDataSource dataSource;
 
     //endregion
 
 
     //region CONSTRUCTORS
-    public ManagerEntitiesImpl(DataSource dataSource) {
+    public ManagerEntitiesImpl(ClientDataSource dataSource) {
         if(dataSource == null) throw new IllegalArgumentException("dataSource");
 
         this.dataSource = dataSource;
+    }
+
+    public ManagerEntitiesImpl() {
+
+        //Properties prop = new Properties();
+        //prop.load(ClassLoader.getSystemResourceAsStream("pv168.project.config.properties"));
+
+        this.dataSource = new ClientDataSource();
+
+        /*ds.setServerName(prop.getProperty("serverName"));
+        ds.setPortNumber(Integer.parseInt(prop.getProperty("port")));
+        ds.setDatabaseName(prop.getProperty("databaseName"));
+        ds.setUser(prop.getProperty("user"));
+        ds.setPassword(prop.getProperty("password"));    */
+
+        dataSource.setServerName("localhost");
+        dataSource.setPortNumber(1527);
+        dataSource.setDatabaseName("EvidencyDBEmbedded");
+        dataSource.setUser("root");
+        dataSource.setPassword("password");
     }
 
     //endregion

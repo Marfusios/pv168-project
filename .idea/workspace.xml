@@ -2,43 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a574ad62-a16a-400f-a34f-dd3e2baa70b0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derby_10_8_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derbynet_10_8_1_2.xml" />
-      <change type="DELETED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\derby-10.5.3.0_1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\derbynet-10.5.3.0_1.jar" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\src\config.properties" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/config.properties" />
-      <change type="MOVED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\src\main\java\Book.java" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/Book.java" />
-      <change type="MOVED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\src\main\java\Disk.java" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/Disk.java" />
-      <change type="MOVED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\src\main\java\Entity.java" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/Entity.java" />
-      <change type="MOVED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\src\main\java\EntityException.java" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/EntityException.java" />
-      <change type="MOVED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\src\main\java\GenreEnum.java" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/GenreEnum.java" />
-      <change type="MOVED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\src\main\java\KindEnum.java" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/KindEnum.java" />
-      <change type="MOVED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\src\main\java\Main.java" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/Main.java" />
-      <change type="MOVED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\src\main\java\ManagerDB.java" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/ManagerDB.java" />
-      <change type="MOVED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\src\main\java\ManagerEntities.java" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/ManagerEntities.java" />
-      <change type="MOVED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\src\main\java\ManagerEntitiesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/ManagerEntitiesImpl.java" />
-      <change type="MOVED" beforePath="C:\Users\m4r10\IdeaProjects\pv168-project\src\main\java\TypeEnum.java" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/TypeEnum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c10.dat" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c10.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c230.dat" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c230.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c241.dat" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c241.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c251.dat" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c251.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c400.dat" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c400.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c60.dat" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c60.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c81.dat" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/seg0/c81.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/log/log.ctrl" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/log/log.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/log/log1.dat" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/log/logmirror.ctrl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pv168/project/Main.java" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pv168/project/ManagerEntitiesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pv168/project/ManagerEntitiesImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/ManagerEntitiesImplTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EvidencyDBEmbedded/db.lck" afterPath="$PROJECT_DIR$/EvidencyDBEmbedded/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pv168-project.iml" afterPath="$PROJECT_DIR$/pv168-project.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pv168-project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1366810419672" ignored="false" />
+    <file path="/Dummy.txt" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1367915337622" ignored="false" />
     <file path="/Main.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365011330546" ignored="false" />
     <file path="/ManagerEntities.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1365012859262" ignored="false" />
     <file path="/Entita.java" changelist="a574ad62-a16a-400f-a34f-dd3e2baa70b0" time="1363201079247" ignored="false" />
@@ -108,8 +81,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -126,7 +99,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pv168/project/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="28" selection-start="355" selection-end="355" vertical-scroll-proportion="0.45132744">
+            <state line="63" column="28" selection-start="2279" selection-end="2279" vertical-scroll-proportion="1.121071">
               <folding />
             </state>
           </provider>
@@ -655,6 +628,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -663,56 +638,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pv168-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pv168-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pv168-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pv168-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pv168-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pv168-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -734,9 +661,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -1052,7 +979,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32589287" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32516703" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1189968" sideWeight="0.6796875" order="3" side_tool="false" content_ui="tabs" />
@@ -1063,18 +990,18 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3236607" sideWeight="0.42102456" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24332978" sideWeight="0.67410713" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24332978" sideWeight="0.67483294" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31919643" sideWeight="0.48292422" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32801822" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3236607" sideWeight="0.42102456" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1149,11 +1076,30 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/homeWork/threads/SimpleSynchronized.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pv168/project/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="19" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
+        <state line="36" column="53" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pv168/project/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="53" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pv168/project/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="28" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/homeWork/threads/SimpleSynchronized.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="19" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -1165,9 +1111,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/homeWork/threads/AtomicInt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="33" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="20" column="33" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/derby.log">
@@ -1187,9 +1131,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/homeWork/threads/SimpleSynchronized.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="19" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="22" column="19" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -1201,14 +1143,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/homeWork/threads/AtomicInt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="33" selection-start="472" selection-end="472" vertical-scroll-proportion="0.24315068">
-          <folding />
-        </state>
+        <state line="20" column="33" selection-start="472" selection-end="472" vertical-scroll-proportion="0.24315068" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pv168/project/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="355" selection-end="355" vertical-scroll-proportion="0.45132744">
+        <state line="63" column="28" selection-start="2279" selection-end="2279" vertical-scroll-proportion="1.121071">
           <folding />
         </state>
       </provider>

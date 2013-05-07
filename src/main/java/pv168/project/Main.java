@@ -39,7 +39,7 @@ public class Main {
 
             //endregion
 
-            ManagerEntities entitiesManager = new ManagerEntitiesImpl(ds);
+            ManagerEntities entitiesManager = new ManagerEntitiesImpl();
 
             //DateFormat format = new SimpleDateFormat("EEE MMM dd yyyy", Locale.US);
             //entitiesManager.addEntity(new pv168.project.Disk("Take The Crown", format.parse("Sat Feb 17 2012"), "Robbie Williams", "Doma v obyvaku", pv168.project.GenreEnum.COMEDY, pv168.project.KindEnum.CD, pv168.project.TypeEnum.MUSIC));
