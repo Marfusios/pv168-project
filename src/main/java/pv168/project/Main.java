@@ -25,18 +25,17 @@ public class Main {
             //prop.load(ClassLoader.getSystemResourceAsStream("pv168.project.config.properties"));
 
             ClientDataSource ds = new ClientDataSource();
-            /*ds.setServerName(prop.getProperty("serverName"));
-            ds.setPortNumber(Integer.parseInt(prop.getProperty("port")));
-            ds.setDatabaseName(prop.getProperty("databaseName"));
-            ds.setUser(prop.getProperty("user"));
-            ds.setPassword(prop.getProperty("password"));    */
 
             ds.setServerName("localhost");
             ds.setPortNumber(1527);
             ds.setDatabaseName("EvidencyDBEmbedded");
             ds.setUser("root");
             ds.setPassword("password");
-
+          /*ds.setServerName(prop.getProperty("serverName"));
+            ds.setPortNumber(Integer.parseInt(prop.getProperty("port")));
+            ds.setDatabaseName(prop.getProperty("databaseName"));
+            ds.setUser(prop.getProperty("user"));
+            ds.setPassword(prop.getProperty("password"));    */
             //endregion
 
             ManagerEntities entitiesManager = new ManagerEntitiesImpl(ds);
