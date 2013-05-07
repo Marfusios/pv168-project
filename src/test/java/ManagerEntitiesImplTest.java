@@ -3,9 +3,6 @@ import org.junit.Before;
 import org.junit.Test;
 import pv168.project.*;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
@@ -31,7 +28,7 @@ public class ManagerEntitiesImplTest {
 
         ManagerDB.startServer();
 
-        try
+        /*try
         {
             //region DATASOURCE
             prop.load(new FileInputStream("src/config.properties"));
@@ -49,9 +46,9 @@ public class ManagerEntitiesImplTest {
         catch (IOException ioex)
         {
             fail("IOException properties file");
-        }
+        }   */
 
-        manager = new ManagerEntitiesImpl(ds);
+        manager = new ManagerEntitiesImpl();
     }
 
 
