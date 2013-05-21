@@ -4,7 +4,7 @@ package pv168.project;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.apache.derby.drda.*;
-
+import java.util.Properties;
 import java.net.InetAddress;
 import java.sql.*;
 
@@ -17,7 +17,7 @@ import java.sql.*;
  */
 public class ManagerDB {
 
-    final static Logger log = LoggerFactory.getLogger(ManagerEntitiesImpl.class);
+    final static Logger log = LoggerFactory.getLogger(ManagerDB.class);
     static NetworkServerControl server;
 
 
