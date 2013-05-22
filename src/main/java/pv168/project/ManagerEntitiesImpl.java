@@ -183,6 +183,44 @@ public class ManagerEntitiesImpl implements ManagerEntities {
     }
 
 
+    public void removeAll()  throws EntityException
+    {
+        Connection con = null;
+        PreparedStatement st = null;
+        try {
+            con = dataSource.getConnection();
+            //začátek SQL operace
+
+            st = con.prepareStatement("DELETE FROM books");
+            st.executeUpdate();
+
+            st=con.prepareStatement("DELETE FROM disks");
+            st.executeUpdate();
+
+            st = con.prepareStatement("DELETE FROM entities");
+            st.executeUpdate();
+
+        } catch (SQLException e) {
+            log.error("cannot remove entity", e);
+            throw new EntityException("database insert failed", e);
+        } finally {
+            if (st != null) {
+                try {
+                    st.close();
+                } catch (SQLException e) {
+                    log.error("cannot close statement", e);
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    log.error("cannot close connection", e);
+                }
+            }
+        }
+    }
+
 	/**
 	 * 
 	 * @param oldEntity

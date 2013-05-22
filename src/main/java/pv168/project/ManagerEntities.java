@@ -16,6 +16,8 @@ public interface ManagerEntities {
 
     void removeEntity(Entity entity) throws EntityException;
 
+    void removeAll() throws EntityException;
+
     void editEntity(Entity oldEntity, Entity newEntity) throws  EntityException;
 
     Entity findEntity(long id) throws EntityException;
