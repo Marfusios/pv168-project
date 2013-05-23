@@ -74,10 +74,10 @@ public class ManagerDB {
             stmt = conn.createStatement();
             try
             {
-                stmt.execute("CREATE TABLE genres (genre VARCHAR(32) NOT NULL CONSTRAINT genres_pk PRIMARY KEY )");
-                ManagerDB.log.info("Created table: genres");
+                /*stmt.execute("CREATE TABLE genres (genre VARCHAR(32) NOT NULL CONSTRAINT genres_pk PRIMARY KEY )");
+                ManagerDB.log.info("Created table: genres"); */
 
-                stmt.execute("CREATE TABLE entities (id INT NOT NULL GENERATED ALWAYS AS IDENTITY CONSTRAINT entities_pk PRIMARY KEY, name VARCHAR(64), author VARCHAR(32), releaseYear DATE, position VARCHAR(128), genre VARCHAR(32) CONSTRAINT genre_fk REFERENCES genres)");
+                stmt.execute("CREATE TABLE entities (id INT NOT NULL GENERATED ALWAYS AS IDENTITY CONSTRAINT entities_pk PRIMARY KEY, name VARCHAR(64), author VARCHAR(32), releaseYear DATE, position VARCHAR(128), genre VARCHAR(32))");
                 ManagerDB.log.info("Created table: entities");
 
                 stmt.execute("CREATE TABLE books (id INT CONSTRAINT entities_id REFERENCES entities, pageCount INT)");
@@ -86,14 +86,14 @@ public class ManagerDB {
                 /*stmt.execute("DROP TABLE disks");
                 pv168.project.ManagerDB.log.info("Deleted table: disks"); */
 
-                stmt.execute("CREATE TABLE disks (id INT CONSTRAINT disk_id_fk REFERENCES entities, kind VARCHAR(32) CONSTRAINT kind_ck CHECK (kind IN ('CD', 'DVD', 'BLUE-RAY')), type VARCHAR(32) CONSTRAINT type_ck CHECK (type IN ('FILM', 'SERIES', 'DATA', 'MUSIC', 'GAME')))");
+                stmt.execute("CREATE TABLE disks (id INT CONSTRAINT disk_id_fk REFERENCES entities, kind VARCHAR(32), type VARCHAR(32))");
                 ManagerDB.log.info("Created table: disks");
             }
             catch (Exception e) {
                 ManagerDB.log.info("Tables already created");
             }
 
-            try
+            /*try
             {
 
                 stmt.execute("INSERT INTO genres (genre) VALUES ('COMEDY')");
@@ -104,7 +104,7 @@ public class ManagerDB {
             }
             catch (Exception e) {
                 ManagerDB.log.info("Values already added");
-            }
+            } */
 
             conn.close();
             ManagerDB.log.error("Connection was closed");
